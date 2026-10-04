@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>金色の留め球 ルチルスフィア｜とー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#090d18; --ink2:#0d1322; --ink3:#111a2e;
+  --moon:#eae7dd; --moon-dim:#b2ad9f;
+  --gold:#c9a76a; --gold-hi:#f0dcae; --gold-lo:#8d7040;
+  --shu:#a63f34; --saffron:#e2953f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--moon);font-family:"Shippori Mincho B1",serif;font-size:16px;line-height:2.15;letter-spacing:.06em;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;padding-bottom:92px}
+img{max-width:100%;display:block}
+p{margin-bottom:1.7em}
+p:last-child{margin-bottom:0}
+em{font-style:normal;color:var(--gold-hi)}
+strong{color:var(--gold-hi);font-weight:600}
+.wrap{max-width:600px;margin:0 auto;padding:0 26px}
+.lat{font-family:"Cormorant Garamond",serif}
+
+.gg{background:linear-gradient(120deg,#f4e2b8 0%,#dcbe85 30%,#a8874e 50%,#dcbe85 70%,#f4e2b8 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite}
+@keyframes sheen{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s cubic-bezier(.22,.61,.36,1),transform 1.1s cubic-bezier(.22,.61,.36,1)}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
+
+section{padding:92px 0;position:relative}
+.sec-a{background:var(--ink)}
+.sec-b{background:linear-gradient(180deg,var(--ink2),var(--ink))}
+.eyebrow{text-align:center;font-size:11px;letter-spacing:.55em;color:var(--gold);margin-bottom:14px;font-family:"Cormorant Garamond",serif}
+h2{font-size:24px;font-weight:800;text-align:center;letter-spacing:.16em;line-height:1.9;margin-bottom:10px}
+.gline{width:54px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:26px auto}
+.orn{display:flex;align-items:center;gap:12px;justify-content:center;margin:28px auto}
+.orn::before,.orn::after{content:"";width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.orn i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg);box-shadow:0 0 10px rgba(201,167,106,.7)}
+
+.band{height:120px;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23c9a76a' stroke-opacity='.10' stroke-width='1'%3E%3Ccircle cx='0' cy='60' r='56'/%3E%3Ccircle cx='0' cy='60' r='42'/%3E%3Ccircle cx='0' cy='60' r='28'/%3E%3Ccircle cx='60' cy='60' r='56'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='120' cy='60' r='56'/%3E%3Ccircle cx='120' cy='60' r='42'/%3E%3Ccircle cx='120' cy='60' r='28'/%3E%3Ccircle cx='30' cy='30' r='56'/%3E%3Ccircle cx='30' cy='30' r='42'/%3E%3Ccircle cx='90' cy='30' r='56'/%3E%3Ccircle cx='90' cy='30' r='42'/%3E%3C/g%3E%3C/svg%3E");background-size:112px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 45%,transparent);mask-image:linear-gradient(180deg,transparent,#000 45%,transparent)}
+
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:calc(5svh + 170px);position:relative;overflow:hidden;background:radial-gradient(ellipse 120% 70% at 50% -10%,#16203a 0%,var(--ink) 62%)}
+.hero .moon{position:absolute;top:7%;right:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 36% 32%,#f7f4ea,#d4cebd 55%,#8f8a7a 96%);box-shadow:0 0 120px 20px rgba(240,236,224,.12);animation:moonfloat 9s ease-in-out infinite}
+@keyframes moonfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero .ring{position:absolute;top:calc(7% - 18px);right:-58px;width:256px;height:256px;border:1px solid rgba(201,167,106,.35);border-radius:50%}
+.hero .vtitle{position:absolute;left:26px;top:9%;z-index:2;display:flex;flex-direction:row-reverse;gap:20px;align-items:flex-start}
+.hero .vtitle .main{writing-mode:vertical-rl;font-size:42px;font-weight:800;letter-spacing:.2em;line-height:1;white-space:nowrap;text-shadow:0 3px 10px rgba(0,0,0,.5)}
+.hero .vtitle .sub{writing-mode:vertical-rl;font-size:12.5px;letter-spacing:.34em;color:var(--moon-dim);margin-top:34px;white-space:nowrap}
+.hero .bottom{position:relative;z-index:2;text-align:center;margin-top:40px}
+.hero .open{font-size:12px;letter-spacing:.34em;color:var(--gold-hi);border:1px solid rgba(201,167,106,.5);display:inline-block;padding:9px 22px;background:rgba(201,167,106,.07)}
+.hero .lim{margin-top:20px;font-size:12.5px;letter-spacing:.5em;color:var(--moon-dim)}
+.hero .skirt{position:absolute;left:0;right:0;bottom:0;height:26svh;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23c9a76a' stroke-opacity='.09' stroke-width='1'%3E%3Ccircle cx='0' cy='60' r='56'/%3E%3Ccircle cx='0' cy='60' r='42'/%3E%3Ccircle cx='0' cy='60' r='28'/%3E%3Ccircle cx='60' cy='60' r='56'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='120' cy='60' r='56'/%3E%3Ccircle cx='120' cy='60' r='42'/%3E%3Ccircle cx='120' cy='60' r='28'/%3E%3Ccircle cx='30' cy='30' r='56'/%3E%3Ccircle cx='30' cy='30' r='42'/%3E%3Ccircle cx='90' cy='30' r='56'/%3E%3Ccircle cx='90' cy='30' r='42'/%3E%3C/g%3E%3C/svg%3E");background-size:112px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 75%);mask-image:linear-gradient(180deg,transparent,#000 75%)}
+
+.tl{position:relative;padding-left:30px;margin-top:14px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(201,167,106,.15));transform-origin:top;transform:scaleY(0);transition:transform 1.6s ease .2s}
+.tl.on::before{transform:scaleY(1)}
+.tl .ti{position:relative;padding:0 0 26px 16px}
+.tl .ti::before{content:"";position:absolute;left:-26px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1.5px solid var(--gold)}
+.tl .ti.now::before{background:var(--gold);box-shadow:0 0 12px rgba(201,167,106,.9)}
+.tl .d{font-size:12px;color:var(--gold-hi);letter-spacing:.22em;margin-bottom:2px}
+.tl p{font-size:14.5px;color:var(--moon-dim);margin-bottom:0}
+
+blockquote{border-left:2px solid var(--gold);padding:8px 0 8px 22px;margin:30px 0;font-size:15px;color:var(--moon-dim)}
+blockquote em{color:var(--gold-hi)}
+
+.ph{margin:34px auto;border:1px solid rgba(201,167,106,.3);padding:8px;background:var(--ink2)}
+.ph img{width:100%}
+.ph .cap{font-size:11.5px;color:var(--moon-dim);text-align:center;letter-spacing:.14em;padding:10px 4px 4px}
+
+.spec{width:100%;border-collapse:collapse;margin:26px 0;font-size:14px}
+.spec th{width:88px;text-align:left;color:var(--gold-hi);font-weight:500;padding:13px 8px;border-bottom:1px solid rgba(234,231,221,.1);vertical-align:top;letter-spacing:.12em}
+.spec td{padding:13px 8px;border-bottom:1px solid rgba(234,231,221,.1);color:var(--moon-dim)}
+
+.pricecard{border:1.5px double var(--gold);padding:44px 26px;text-align:center;background:linear-gradient(180deg,rgba(201,167,106,.09),rgba(201,167,106,.02));position:relative;box-shadow:0 0 70px rgba(201,167,106,.1)}
+.pricecard .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid var(--gold);color:var(--gold-hi);font-size:11px;letter-spacing:.3em;padding:4px 18px;white-space:nowrap}
+.pricecard .was{font-size:16px;color:var(--moon-dim);text-decoration:line-through;letter-spacing:.1em}
+.pricecard .now{font-size:52px;font-weight:800;letter-spacing:.04em;line-height:1.3;font-family:"Cormorant Garamond","Shippori Mincho B1",serif}
+.pricecard .now small{font-size:18px}
+.pricecard .meta{font-size:12px;color:var(--moon-dim);letter-spacing:.14em;margin-top:4px}
+.pricecard .off{display:inline-block;margin-top:16px;border:1px solid var(--shu);color:#e8b0a6;font-size:12px;letter-spacing:.24em;padding:5px 16px}
+
+.you li{list-style:none;padding:14px 4px 14px 38px;position:relative;border-bottom:1px solid rgba(234,231,221,.09);font-size:15px}
+.you li::before{content:"";position:absolute;left:8px;top:50%;transform:translateY(-50%) rotate(45deg);width:8px;height:8px;background:var(--gold)}
+
+.step{display:flex;gap:18px;margin-bottom:24px;align-items:flex-start}
+.step .n{flex:none;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-size:15px;background:rgba(201,167,106,.07);margin-top:4px}
+.step h3{font-size:16px;font-weight:600;margin-bottom:2px}
+.step p{font-size:13.5px;color:var(--moon-dim);margin-bottom:0}
+.pay{border:1px solid rgba(201,167,106,.3);background:var(--ink2);padding:20px 22px;font-size:13px;color:var(--moon-dim);line-height:2;margin-top:28px}
+.pay b{color:var(--gold-hi);font-weight:600;display:block;letter-spacing:.2em;font-size:12px;margin-bottom:6px}
+
+.after-box{border:1.5px solid var(--gold);background:linear-gradient(180deg,rgba(201,167,106,.1),rgba(201,167,106,.03));padding:34px 26px}
+.after-box h3{color:var(--gold-hi);font-size:16px;letter-spacing:.2em;margin-bottom:14px;text-align:center}
+.after-box ol{margin:0 0 18px 0;padding-left:0;counter-reset:st}
+.after-box ol li{list-style:none;counter-increment:st;position:relative;padding:10px 0 10px 40px;font-size:15px;border-bottom:1px solid rgba(234,231,221,.1)}
+.after-box ol li::before{content:counter(st);position:absolute;left:4px;top:50%;transform:translateY(-50%);width:26px;height:26px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-size:13px}
+.warn{font-size:13px;color:#e0b9b0;border-left:2px solid var(--shu);padding-left:14px;margin-top:16px}
+
+details{border-bottom:1px solid rgba(234,231,221,.1)}
+summary{cursor:pointer;list-style:none;padding:20px 34px 20px 4px;font-size:15px;font-weight:600;position:relative;letter-spacing:.06em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:10px;top:50%;width:9px;height:9px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:translateY(-70%) rotate(45deg);transition:transform .35s ease}
+details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.a{padding:0 4px 24px;font-size:14px;color:var(--moon-dim)}
+.a b{color:var(--gold-hi);font-weight:600}
+
+.last{text-align:center}
+.hanko{margin:30px auto 0;width:46px;height:46px;background:linear-gradient(160deg,#a63f34,#8c2f27);color:#f5efe2;font-size:13.5px;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;letter-spacing:.12em;border-radius:4px;transform:rotate(-2.5deg);box-shadow:inset 0 0 0 1.4px rgba(245,239,226,.85),0 2px 8px rgba(0,0,0,.5);font-weight:600}
+
+.cta{display:block;text-align:center;background:linear-gradient(160deg,#e9cf96,#b8945c);color:var(--ink);font-weight:800;font-size:17px;letter-spacing:.2em;padding:21px 12px;border-radius:3px;text-decoration:none;box-shadow:0 8px 34px rgba(201,167,106,.35);margin:36px auto 10px;max-width:420px;animation:breathe 3.6s ease-in-out infinite}
+@keyframes breathe{0%,100%{box-shadow:0 8px 30px rgba(201,167,106,.3)}50%{box-shadow:0 8px 46px rgba(201,167,106,.55)}}
+.ctasub{text-align:center;font-size:11.5px;color:var(--moon-dim);letter-spacing:.1em}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(9,13,24,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(201,167,106,.4);padding:12px 14px calc(12px + env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(160deg,#e9cf96,#b8945c);color:var(--ink);text-decoration:none;font-weight:800;font-size:14.5px;letter-spacing:.08em;padding:14px 10px;border-radius:3px}
+.bar .s{font-size:10.5px;font-weight:500}
+
+footer{padding:44px 0 60px;text-align:center;font-size:11px;color:rgba(178,173,159,.55);letter-spacing:.1em;line-height:2.4}
+footer a{color:rgba(178,173,159,.75)}
+.legal{font-size:11px;color:rgba(178,173,159,.55);line-height:2.2;margin-top:26px;text-align:center}
+
+
+/* ── とー版 ── */
+.hero .moon{background:radial-gradient(circle at 34% 30%,#fff6dc 0%,#f0d79a 22%,#c9a35a 52%,#7a5a2a 88%,#4a3417 100%);box-shadow:0 0 140px 30px rgba(240,210,140,.18),inset -18px -22px 40px rgba(0,0,0,.35)}
+.hero .moon::after{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-linear-gradient(118deg,transparent 0 9px,rgba(255,236,180,.55) 9px 10px,transparent 10px 23px),repeating-linear-gradient(64deg,transparent 0 14px,rgba(255,226,160,.35) 14px 15px,transparent 15px 31px);mix-blend-mode:screen;opacity:.75}
+.hero .dawn{position:absolute;left:0;right:0;bottom:0;height:52svh;background:linear-gradient(180deg,rgba(20,40,34,0) 0%,rgba(24,52,40,.22) 55%,rgba(201,167,106,.16) 100%);pointer-events:none}
+.hero .from{font-size:11px;letter-spacing:.4em;color:var(--gold-hi);margin-bottom:12px}
+.hero .lead{font-size:14px;color:var(--moon);letter-spacing:.14em;margin-bottom:18px}
+.todo{color:#ffb4a8;background:rgba(166,63,52,.18);padding:0 4px;border-radius:2px}
+.cta.off,.bar a.off{background:linear-gradient(160deg,#4a4a52,#2e2e36);color:#d9d6cc;box-shadow:none;animation:none;pointer-events:none}
+.notfor{border:1px solid rgba(166,63,52,.6);background:rgba(166,63,52,.08);padding:22px 22px;margin:28px 0;font-size:14px}
+.notfor b{display:block;color:#e8b0a6;letter-spacing:.2em;font-size:12.5px;margin-bottom:8px}
+.notfor li{list-style:none;padding:6px 0 6px 20px;position:relative}
+.notfor li::before{content:"・";position:absolute;left:0;color:#e8b0a6}
+.qpair{text-align:center;font-size:17px;line-height:2.2;margin:30px 0}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="ring"></div><div class="moon" aria-hidden="true"></div>
+  <div class="vtitle rv">
+    <span class="main gg">金色の留め球</span>
+    <span class="main gg" style="font-size:27px;margin-top:16px">ルチルスフィア</span>
+    <span class="sub">入ってきたものを、家のまんなかに留める球</span>
+  </div>
+  <div class="bottom rv">
+    <p class="from">ブラジルの聖地の集落より</p>
+    <p class="lead">金運は、上げるものではなく、<br>留めるものでした。</p>
+    <p class="open">10月26日（月）夜7時 ── お迎えの扉が、開きました</p>
+    <p class="lim">受付は10月28日（水）夜11時59分まで</p>
+  </div>
+  <div class="dawn"></div>
+  <div class="skirt"></div>
+</div>
+
+<!-- TO YOU -->
+<section class="sec-a">
+  <div class="wrap rv">
+    <p class="eyebrow lat">TO YOU</p>
+    <h2 class="gg">動画を最後まで<br>見てくださった、あなたへ</h2>
+    <div class="gline"></div>
+    <p>とーです。</p>
+    <p>このページを開いてくださったということは、あの動画を、最後まで見てくださった方だと思います。本当に、ありがとうございます。</p>
+    <p>たくさんの占い師さんから止められた話を、私は全部お話ししました。ここから先は、<strong>迎えたいと思ってくださった方のための、お迎えのご案内</strong>です。</p>
+    <p>値段のことも、届くまでの流れも、すべてこの一枚に書きました。どうか、ゆっくり読み進めてください。</p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- JOURNEY -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">THE JOURNEY</p>
+    <h2 class="rv">ここまでの、流れ</h2>
+    <div class="gline"></div>
+    <p class="rv" style="text-align:center;font-size:14.5px;color:var(--moon-dim)">これは、突然の販売ではありません。</p>
+    <div class="tl rv">
+      <div class="ti"><p class="d">10月20日</p><p>2027年の金運を覚醒させる鑑定を、受け取ってくださいました。</p></div>
+      <div class="ti"><p class="d">10月23日</p><p>止められたメッセージを、そのままお見せしました。</p></div>
+      <div class="ti"><p class="d">10月24日</p><p>止められた話を、動画で全部お話ししました。</p></div>
+      <div class="ti now"><p class="d">10月26日 夜7時</p><p>迎えたいと思ってくださった方に、お迎えの扉を開きます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGEND -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">THE LEGEND</p>
+    <h2 class="rv gg">家のまんなかの、金色の球</h2>
+    <div class="gline"></div>
+    <p class="rv">ブラジルの聖地の、いちばん奥の集落。7月の動画でお話しした、あの老人がいる集落です。</p>
+    <p class="rv">あの集落の家には、身につける石とは別に、<strong>家族がいちばん長く過ごす部屋のまんなかに、金色の球</strong>が置かれてきたそうです。</p>
+    <blockquote class="rv">入ってくるものは、出かける時に持ち出される。<br><em>留めておくのは、家のまんなかの球だ。</em></blockquote>
+    <div class="ph rv"><img src="assets/sphere_light.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">朝の光が、金の針を通る</p></div>
+    <p class="rv">中に金色の針が入った<strong>ルチルクォーツ</strong>は、昔から金運・財運の石として大切にされてきました。</p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- WHY -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">WHY</p>
+    <h2 class="rv">なぜ、がんばっても<br>増えていかなかったのか</h2>
+    <div class="gline"></div>
+    <p class="rv">財布も、盛り塩も、お参りも、言霊も。全部、<strong>蛇口をひねる話</strong>でした。どうやって水を出すか。どうやってたくさん流すか。</p>
+    <p class="qpair rv">でも、桶がなければ、<br><em>水は床を流れていくだけ</em>です。</p>
+    <p class="rv">お金が残らなかったのは、あなたががんばっていなかったからではありません。<strong>足りなかったのではなく、留まる場所がなかっただけ</strong>です。</p>
+    <p class="rv">そして、お金が出ていくと決まるのは、毎日いちばん長く過ごす場所のテーブルです。何を払うか。何をあきらめるか。だから、留めるものは、そこに要ります。</p>
+    <p class="rv" style="color:var(--moon-dim);font-size:14.5px">なぜ球が留めるのか、科学で説明することは、私にはできません。あの集落の言い伝えと、迎えた方の声から、私がそう考えているお話です。</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">STORY</p>
+    <h2 class="rv">数年前に、迎えた方のこと</h2>
+    <div class="gline"></div>
+    <p class="rv"><span class="todo">【数年前に迎えた方の、実際にあった一人の話。いつ・どんな悩みの方が・どこに置いて・何日後に・何が起きたか。事実だけ】</span></p>
+    <div class="ph rv"><img src="assets/voice1.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">数年前に迎えた方の声です（個人の感想です）</p></div>
+    <p class="rv" style="text-align:center;color:var(--moon-dim);font-size:14.5px">全員に同じことが起きるとは、言いません。</p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- SPHERE -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">THE SPHERE</p>
+    <h2 class="rv gg">金色の留め球<br>ルチルスフィア</h2>
+    <div class="gline"></div>
+    <div class="ph rv"><img src="assets/sphere_hand.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">手のひらに乗る、あなたの一つ</p></div>
+    <table class="spec rv">
+      <tr><th>名前</th><td>金色の留め球 ルチルスフィア</td></tr>
+      <tr><th>素材</th><td>天然ルチルクォーツ <span class="todo">【産地】</span></td></tr>
+      <tr><th>形</th><td>球（スフィア）</td></tr>
+      <tr><th>大きさ</th><td>直径<span class="todo">【○cm】</span>・重さ<span class="todo">【○g】</span><br>手のひらに乗る大きさで、小さなテーブルにも置けます</td></tr>
+      <tr><th>一緒に届く</th><td><span class="todo">【台座・使い方の手紙など】</span></td></tr>
+      <tr><th>選び方</th><td>置きたい場所を教えていただき、その場所に合う一つを、とーが選びます</td></tr>
+      <tr><th>お届け</th><td><span class="todo">【受付終了後、○週間以内に発送】</span>（追跡番号をお知らせします）</td></tr>
+    </table>
+    <p class="rv" style="font-size:14px;color:var(--moon-dim)">天然の石なので、金の針の入り方、色、内包物は一つずつ違います。あなたのもとへ届くのは、世界にひとつだけの球です。</p>
+  </div>
+</section>
+
+<!-- HOW TO PLACE -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">HOW TO PLACE</p>
+    <h2 class="rv">迎え方は、ひとつだけ</h2>
+    <div class="gline"></div>
+    <p class="rv" style="text-align:center"><strong>毎日いちばん長く過ごす場所に、置いてください。</strong></p>
+    <p class="rv">多くの方はリビング。一人暮らしの方は、いちばん長くいる部屋。家でお仕事をしている方は、仕事をする場所も同じです。</p>
+    <p class="rv">リビングが自分の場所ではない方は、お金のことをいちばん考える場所で構いません。台所のテーブルでも、自分の部屋の机でも。</p>
+    <p class="rv" style="text-align:center"><em>届いた朝、カーテンを開けて、<br>まず光を通してみてください。</em></p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- JULY -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">FOR JULY</p>
+    <h2 class="rv">7月に、ブラジルルチルを<br>迎えてくださった方へ</h2>
+    <div class="gline"></div>
+    <p class="rv">7月のものは、身につけて、握っていた手をひらく石。今回のものは、家のまんなかで、入ってきたものを留める球。<strong>あの集落でも、両方そろえています。</strong>役目が違うので、一緒にお使いいただけます。</p>
+    <p class="rv">思ったほど変わらなかった、と感じている方もいると思います。その気持ちは、否定しません。今回のものを迎えないと7月の石が無駄になる、ということもありません。</p>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">PRICE</p>
+    <h2 class="rv">お値段について、<br>正直にお話しします</h2>
+    <div class="gline"></div>
+    <p class="rv">この球は、あの老人が「日本で困っている人のためなら」と、ごくわずかだけ託してくれたものです。一つずつ、置く場所に合わせて選んでお届けします。</p>
+    <div class="pricecard rv">
+      <p class="tag">金色の留め球 ルチルスフィア</p>
+      <p class="now gg">¥99,800<small>（税込）</small></p>
+      <p class="meta">送料 <span class="todo">【込み／別途○円】</span></p>
+    </div>
+    <p class="rv" style="margin-top:30px">一度迎えれば、ずっとそこにいてくれます。<strong>毎月なにかを買い足す必要は、ありません。</strong></p>
+    <p class="rv">それでも、決して小さな金額ではないことは、分かっています。生活費や、返済に回すお金を削ってまで、迎えるものではありません。借り入れをして迎えるものでもありません。ご家族と相談してから、決めてください。</p>
+    <div class="notfor rv">
+      <b>次の方は、今回は見送ってください</b>
+      <ul>
+        <li>生活費が足りず、借り入れやカードの返済が続いている方</li>
+        <li>このお金を出すと、来月の暮らしが苦しくなる方</li>
+      </ul>
+    </div>
+    <p class="rv" style="text-align:center;color:var(--moon-dim);font-size:14.5px">前回は、すぐに受付を閉じました。<br>今回も、早く閉じるかもしれません。</p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- FOR YOU -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">FOR YOU</p>
+    <h2 class="rv">こんな方に、<br>迎えていただきたい</h2>
+    <div class="gline"></div>
+    <ul class="you rv">
+      <li>2027年こそ、金運を覚醒させたい</li>
+      <li>働いても働いても、お金が残らない</li>
+      <li>財布も、盛り塩も、お参りも、言霊も、やってきた</li>
+      <li>もう、新しい蛇口を探すのに疲れた</li>
+      <li>お金の心配をせずに、暮らしたい</li>
+      <li>今度は自分が、大切な人に何かしてあげたい</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HOW TO RECEIVE -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">HOW TO RECEIVE</p>
+    <h2 class="rv">お迎えの流れ</h2>
+    <div class="gline"></div>
+    <p class="rv" style="text-align:center;font-size:14px;color:var(--moon-dim)">お迎えは、公式ストア（STORES）で承ります。手順は4つだけです。</p>
+    <div class="step rv"><div class="n">1</div><div><h3>「カートに入れる」を押す</h3><p>下のボタンから公式ストアへ進み、カートに入れてください。</p></div></div>
+    <div class="step rv"><div class="n">2</div><div><h3>購入方法を選ぶ</h3><p>ゲスト購入でも、会員登録して購入でも、どちらでも大丈夫です。</p></div></div>
+    <div class="step rv"><div class="n">3</div><div><h3>お支払い方法を選ぶ</h3><p>クレジットカードがなくても、お申し込みいただけます。</p></div></div>
+    <div class="step rv"><div class="n">4</div><div><h3>ご注文完了</h3><p>とーのLINEに、置きたい場所を一言だけ送ってください。</p></div></div>
+    <div class="pay rv"><b>お支払い方法</b>クレジットカード（一括）／コンビニ払い／銀行振込／PayPay／あと払い（ペイディ・atone：翌月にまとめてお支払い）<br><br><b>コンビニ払いの流れ</b>①「コンビニ決済」を選ぶ　②届いたメールに番号が書いてあります　③その番号を持って、コンビニでお支払い（注文から3日以内）<br>分からないときは、とーのLINEにそのまま送ってください。</div>
+    <a class="cta js-cta rv" href="#">球を、お迎えする</a>
+    <p class="ctasub rv">安全な決済ページ（STORES）へ移動します</p>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- AFTER -->
+<section class="sec-b">
+  <div class="wrap">
+    <p class="eyebrow lat rv">AFTER ORDER</p>
+    <h2 class="rv">ご注文のあとに</h2>
+    <div class="gline"></div>
+    <div class="after-box rv">
+      <h3>とーのLINEへ、一言だけ</h3>
+      <ol><li>置きたい場所（例：毎朝コーヒーを飲むテーブルの横）</li></ol>
+      <p style="font-size:14px;color:var(--moon-dim);margin:0">その場所に合う一つを選んで、お届けの支度に入ります。</p>
+      <p class="warn"><span class="todo">【購入の確認にお名前・スクリーンショットが要るかは要確認】</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- QA -->
+<section class="sec-a">
+  <div class="wrap">
+    <p class="eyebrow lat rv">Q &amp; A</p>
+    <h2 class="rv">よくあるご質問</h2>
+    <div class="gline"></div>
+    <div class="rv">
+    <details><summary>どこに置けばいいですか？</summary><div class="a"><p>毎日いちばん長く過ごす場所です。ご注文のあとに場所を教えていただければ、それに合う一つを選びます。</p></div></details>
+    <details><summary>部屋が狭くても置けますか？</summary><div class="a"><p>手のひらに乗る大きさなので、小さなテーブルの上でも置けます。</p></div></details>
+    <details><summary>家族に相談してもいいですか？</summary><div class="a"><p>ぜひ、相談してから決めてください。受付は<b>10月28日（水）の夜11時59分</b>までです。</p></div></details>
+    <details><summary>家族に知られずに置けますか？</summary><div class="a"><p><span class="todo">【箱や送り状の表記を確かめて書く】</span></p></div></details>
+    <details><summary>7月の石と一緒に使えますか？</summary><div class="a"><p>使えます。7月の石は身につけて手をひらく役目、今回の球は家のまんなかで留める役目です。</p></div></details>
+    <details><summary>いつ届きますか？</summary><div class="a"><p><span class="todo">【受付終了後、○週間以内に発送します】</span>発送が済みましたら、追跡番号をお知らせします。</p></div></details>
+    <details><summary>分割で払えますか？</summary><div class="a"><p>分割払いはご用意していません。カード会社で分割やリボに変えられる場合もありますが、手数料がかかります。<b>生活に響くなら、今回は見送ってください。</b></p></div></details>
+    <details><summary>クレジットカードを持っていません</summary><div class="a"><p>コンビニ払い・銀行振込・PayPay・あと払い（ペイディ・atone）でお申し込みいただけます。</p></div></details>
+    <details><summary>返品・交換はできますか？</summary><div class="a"><p>一つずつ、置く場所に合わせて選んでお届けするため、お客様のご都合による返品・交換はお受けできません。だからこそ、迷いがあるうちは、無理に迎えないでください。</p><p>届いたときの破損など、明らかな不備は、到着後7日以内にLINEでご連絡ください。責任を持って対応いたします。</p></div></details>
+    <details><summary>お手入れはどうすればいいですか？</summary><div class="a"><p><span class="todo">【直射日光・落下・水の扱いを事実で】</span></p></div></details>
+    <details><summary>必ずお金が増えますか？</summary><div class="a"><p>正直にお答えします。この球は、昔から金運の石として大切にされてきた天然のルチルクォーツで、あの集落の言い伝えとともにお届けするお守りです。<b>何かを保証するものではありません。</b>感じ方には個人差があります。</p></div></details>
+    <details><summary>写真と実物は同じですか？</summary><div class="a"><p>天然の石なので、一つずつ違います。写真はイメージです。</p></div></details>
+    <details><summary>領収書は出ますか？</summary><div class="a"><p><span class="todo">【STORESの注文確認メールで代えられるか確かめて書く】</span></p></div></details>
+    </div>
+  </div>
+</section>
+
+<div class="band"></div>
+
+<!-- LAST -->
+<section class="sec-b last">
+  <div class="wrap">
+    <p class="eyebrow lat rv">FROM TO-</p>
+    <h2 class="rv gg">最後に</h2>
+    <div class="gline"></div>
+    <p class="rv">あなたは、今まで何も間違っていません。財布も、盛り塩も、お参りも、言霊も、全部正しかった。蛇口は、ちゃんとひねれていました。</p>
+    <p class="rv">ただ、留める場所を、誰も用意しなかった。それだけです。</p>
+    <p class="rv"><strong>あなたのせいじゃなかった。</strong>私は、それを言いたくて、この話をしました。</p>
+    <p class="rv">迎えるかどうかは、あなたが決めてください。無理をして迎えるものではありません。</p>
+    <div class="orn rv"><i></i></div>
+    <p class="rv" style="color:var(--moon-dim);font-size:14.5px">もし迎えてくださるなら、毎日いちばん長く過ごすその場所で、<br>あなたの2027年が、留める一年になりますように。</p>
+    <p class="rv" style="letter-spacing:.4em;color:var(--gold-hi)">とー</p>
+    <a class="cta js-cta rv" href="#">球を、お迎えする</a>
+    <p class="ctasub rv">受付は10月28日（水）夜11時59分まで</p>
+    <p class="legal rv">本商品は天然石を用いたお守りであり、効果を保証するものではありません。<br>感じ方には個人差があります。<br>お客様のご都合による返品・交換はお受けしておりません。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="todo">特定商取引法に基づく表記</a> ／
+    <a href="#" class="todo">プライバシーポリシー</a> ／
+    <a href="#" class="todo">お問い合わせ</a>
+    <br>© とー
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="js-cta" href="#">¥99,800で迎える<span class="s">（税込）</span></a>
+</div>
+
+<script>
+// STORESの商品URLを入れる
+const STORE_URL = "【STORESのURL】";
+const OPEN  = new Date("2026-10-26T19:00:00+09:00");
+const CLOSE = new Date("2026-10-28T23:59:59+09:00");
+function setCta(){
+  const now = new Date();
+  document.querySelectorAll(".js-cta").forEach(a=>{
+    const isBar = a.closest(".bar");
+    if(now < OPEN){
+      a.classList.add("off"); a.removeAttribute("href");
+      a.textContent = "10/26（月）夜7時から受付";
+    }else if(now > CLOSE){
+      a.classList.add("off"); a.removeAttribute("href");
+      a.textContent = "受付は終了しました";
+    }else{
+      a.classList.remove("off"); a.href = STORE_URL;
+    }
+  });
+}
+setCta(); setInterval(setCta, 30000);
+const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv,.tl').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
