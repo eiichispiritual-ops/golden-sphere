@@ -356,6 +356,16 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
   .wrap p{font-size:15.5px}
   .sec-a,.sec-b{padding:68px 0}
 }
+
+/* 価格カードの商品写真 */
+.pcimg{width:min(62%,210px);margin:4px auto 26px;position:relative}
+.pcimg::after{content:"";position:absolute;inset:-14%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(240,210,140,.22),transparent 68%)}
+.pcimg img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;position:relative;z-index:1;
+  box-shadow:0 10px 40px rgba(0,0,0,.55),0 0 0 1px rgba(201,167,106,.3)}
+.pricecard{padding:44px 24px 38px}
+.pricecard .was{margin-bottom:4px}
+.pricecard .meta{margin-top:8px}
 </style>
 </head>
 <body>
@@ -505,6 +515,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <p class="rv">あの老人が「日本で困っている人のためなら」と、ごくわずかだけ託してくれた球です。一つずつ、置く場所に合わせて選んでお届けします。</p>
     <div class="pricecard rv"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
       <p class="tag">黄金の留め球 シトリンスフィア</p>
+      <div class="pcimg"><img src="assets/sphere_light.jpg" alt="黄金の留め球 シトリンスフィア"></div>
       <p class="was">本来 ¥149,000</p>
       <p class="now gg">¥99,800<small>（税込）</small></p>
       <p class="meta">送料込み</p>
