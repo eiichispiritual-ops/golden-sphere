@@ -145,6 +145,28 @@ footer a{color:rgba(178,173,159,.75)}
 .hero .stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 12% 18%,rgba(240,220,174,.7),transparent 60%),radial-gradient(1px 1px at 28% 42%,rgba(240,220,174,.45),transparent 60%),radial-gradient(1.2px 1.2px at 62% 12%,rgba(240,220,174,.6),transparent 60%),radial-gradient(1px 1px at 84% 52%,rgba(240,220,174,.4),transparent 60%),radial-gradient(1px 1px at 44% 66%,rgba(240,220,174,.35),transparent 60%),radial-gradient(1.4px 1.4px at 8% 72%,rgba(240,220,174,.5),transparent 60%),radial-gradient(1px 1px at 92% 22%,rgba(240,220,174,.55),transparent 60%);animation:twinkle 6s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:.6}50%{opacity:1}}
 .hero .moon{background:none;box-shadow:none;width:240px;height:240px;top:6%;right:-46px}
+.pricecard .gifts{margin-top:30px;padding-top:26px;border-top:1px solid rgba(201,167,106,.3)}
+.pricecard .gifts .gh{font-size:15px;line-height:1.9;color:var(--moon);margin-bottom:16px}
+.pricecard .gifts .gh strong{color:var(--gold-hi)}
+.pricecard .gifts ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.pricecard .gifts li{font-size:14.5px;color:var(--moon);padding:9px 10px;background:rgba(201,167,106,.07);border:1px solid rgba(201,167,106,.22)}
+.cdbox{margin-top:30px;padding-top:26px;border-top:1px solid rgba(201,167,106,.3)}
+.cdlabel{font-size:12px;letter-spacing:.26em;color:var(--gold-hi);margin-bottom:14px}
+.cd{display:flex;align-items:flex-start;justify-content:center;gap:4px}
+.cd .u{display:flex;flex-direction:column;align-items:center;min-width:52px}
+.cd .u b{font-family:var(--serif,serif);font-size:40px;line-height:1;color:var(--moon);font-weight:400;letter-spacing:.02em}
+.cd .u.last b{color:var(--gold-hi)}
+.cd .u span{font-size:11px;letter-spacing:.2em;color:var(--moon-dim);margin-top:9px}
+.cd i{font-style:normal;font-size:26px;line-height:1.1;color:rgba(201,167,106,.45);padding-top:4px}
+.cdnote{font-size:12.5px;color:var(--moon-dim);margin-top:18px}
+.stock{margin-top:26px;text-align:left}
+.srow{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+.srow .sl{font-size:12.5px;color:var(--moon-dim);letter-spacing:.08em}
+.srow .sr{font-family:var(--serif,serif);font-size:17px;color:var(--gold-hi);letter-spacing:.1em}
+.sbar{height:7px;background:rgba(255,255,255,.08);border-radius:4px;overflow:hidden}
+.sbar i{display:block;height:100%;width:88%;background:linear-gradient(90deg,#8a6a2e,var(--gold-hi));border-radius:4px}
+.snote{font-size:11.5px;line-height:1.8;color:var(--moon-dim);margin-top:10px;text-align:center}
+@media(max-width:360px){.cd .u{min-width:44px}.cd .u b{font-size:33px}}
 .voices{display:flex;flex-direction:column;gap:14px;margin:26px 0 18px}
 .voices img{width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 2px 14px rgba(0,0,0,.28)}
 .vnote{font-size:12.5px;line-height:1.85;color:var(--moon-dim);text-align:center;margin-top:4px}
@@ -357,8 +379,34 @@ footer{font-size:12px}
     <p class="rv">あの老人が「日本で困っている人のためなら」と、ごくわずかだけ託してくれた球です。一つずつ、置く場所に合わせて選んでお届けします。</p>
     <div class="pricecard rv"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
       <p class="tag">黄金の留め球 シトリンスフィア</p>
+      <p class="was">本来 ¥149,000</p>
       <p class="now gg">¥99,800<small>（税込）</small></p>
       <p class="meta">送料込み</p>
+
+      <div class="gifts">
+        <p class="gh">さらに、総額1万円相当を<br><strong>無料でお付けします</strong></p>
+        <ul>
+          <li>黄金の留め球 待ち受け画像</li>
+          <li>2027年 開運カレンダー</li>
+          <li>金運覚醒ヒーリング</li>
+        </ul>
+      </div>
+
+      <div class="cdbox">
+        <p class="cdlabel">受付終了まで</p>
+        <div class="cd">
+          <div class="u"><b id="cd-d">—</b><span>日</span></div><i>:</i>
+          <div class="u"><b id="cd-h">—</b><span>時間</span></div><i>:</i>
+          <div class="u"><b id="cd-m">—</b><span>分</span></div><i>:</i>
+          <div class="u last"><b id="cd-s">—</b><span>秒</span></div>
+        </div>
+        <p class="cdnote">10月28日（水）23:59で締め切ります</p>
+        <div class="stock">
+          <div class="srow"><span class="sl">お届けできる数</span><span class="sr">残りわずか</span></div>
+          <div class="sbar"><i></i></div>
+          <p class="snote">1つずつ選んでお届けするので、<br>なくなり次第、終了します</p>
+        </div>
+      </div>
     </div>
     <p class="rv" style="margin-top:34px">一度迎えれば、ずっとそこにいてくれます。<strong>毎月なにかを買い足す必要は、ありません。</strong></p>
     <p class="rv">それでも、小さな金額ではありません。生活費や返済のお金を削ってまで、借り入れをしてまで、迎えるものではありません。ご家族と相談して、決めてください。</p>
@@ -369,7 +417,7 @@ footer{font-size:12px}
         <li>このお金を出すと、来月の暮らしが苦しくなる方</li>
       </ul>
     </div>
-    <p class="rv" style="text-align:center;color:var(--moon-dim)">前回は、すぐに受付を閉じました。<br>今回も、早く閉じるかもしれません。</p>
+    <p class="rv" style="text-align:center;color:var(--moon-dim)">数年前は、1時間ほどで受付を閉じました。<br>今回も、早く閉じるかもしれません。</p>
 
   </div>
 </section>
@@ -498,6 +546,20 @@ function setCta(){
   });
 }
 setCta(); setInterval(setCta, 30000);
+function tickCd(){
+  const el = document.getElementById("cd-d"); if(!el) return;
+  let diff = CLOSE - new Date();
+  if(diff < 0) diff = 0;
+  const d = Math.floor(diff/86400000);
+  const h = Math.floor(diff%86400000/3600000);
+  const m = Math.floor(diff%3600000/60000);
+  const sec = Math.floor(diff%60000/1000);
+  el.textContent = d;
+  document.getElementById("cd-h").textContent = String(h).padStart(2,"0");
+  document.getElementById("cd-m").textContent = String(m).padStart(2,"0");
+  document.getElementById("cd-s").textContent = String(sec).padStart(2,"0");
+}
+tickCd(); setInterval(tickCd, 1000);
 const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv,.tl').forEach(el=>io.observe(el));
 </script>
