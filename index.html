@@ -366,6 +366,45 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 .pricecard{padding:44px 24px 38px}
 .pricecard .was{margin-bottom:4px}
 .pricecard .meta{margin-top:8px}
+
+/* 価格カードの余白を詰める */
+.pricecard .was{margin:0 0 6px;line-height:1.4}
+.pricecard .now{margin:0;line-height:1.1}
+.pricecard .meta{margin:10px 0 0;line-height:1.4}
+.pcimg{margin:2px auto 22px}
+
+/* 特典ブロック v2 */
+.pricecard .gifts{margin-top:34px;padding-top:0;border-top:none;position:relative}
+.pricecard .gifts::before{content:"";display:block;width:100%;height:1px;margin-bottom:30px;
+  background:linear-gradient(90deg,transparent,rgba(201,167,106,.5),transparent)}
+.gbadge{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-indent:.2em;
+  color:#1a1408;background:linear-gradient(100deg,#c89b4e,#f6e8bf 48%,#c89b4e);
+  padding:7px 18px;border-radius:2px;margin-bottom:18px;box-shadow:0 4px 18px rgba(201,167,106,.3)}
+.pricecard .gifts .gh{font-family:var(--disp);font-size:clamp(18px,5.2vw,22px);line-height:1.85;
+  letter-spacing:.08em;color:#f6f2e6;margin-bottom:26px}
+.pricecard .gifts .gh strong{color:var(--gold-hi);font-weight:600}
+.gy{font-family:"Cormorant Garamond",serif;font-size:1.5em;font-weight:600;letter-spacing:.02em;
+  background:linear-gradient(100deg,#c89b4e,#f6e8bf 46%,#c89b4e);-webkit-background-clip:text;background-clip:text;color:transparent;
+  padding:0 .08em}
+.glist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;text-align:left}
+.glist li{display:flex;gap:14px;align-items:flex-start;padding:18px 16px;position:relative;
+  background:linear-gradient(110deg,rgba(201,167,106,.12),rgba(201,167,106,.03));
+  border:1px solid rgba(201,167,106,.28)}
+.glist li::after{content:"";position:absolute;top:0;left:0;width:3px;height:100%;
+  background:linear-gradient(180deg,var(--gold-hi),rgba(201,167,106,.2))}
+.gno{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:500;line-height:1;flex:0 0 auto;
+  background:linear-gradient(100deg,#c89b4e,#f6e8bf);-webkit-background-clip:text;background-clip:text;color:transparent;
+  padding-top:3px}
+.gbody{display:flex;flex-direction:column;gap:7px}
+.gbody b{font-family:var(--disp);font-size:16px;font-weight:600;letter-spacing:.06em;color:#f6f2e6;line-height:1.6}
+.gbody i{font-style:normal;font-size:13px;line-height:1.85;letter-spacing:.04em;color:var(--moon-dim)}
+.gfoot{font-size:13px;line-height:1.95;color:var(--moon-dim);margin-top:20px;letter-spacing:.04em}
+@media(max-width:360px){
+  .glist li{padding:15px 13px;gap:11px}
+  .gno{font-size:21px}
+  .gbody b{font-size:15px}
+  .gbody i{font-size:12.5px}
+}
 </style>
 </head>
 <body>
@@ -521,12 +560,32 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
       <p class="meta">送料込み</p>
 
       <div class="gifts">
-        <p class="gh">このページを開いてから<strong>24時間以内</strong>に<br>迎えてくださった方には、<br>総額1万円相当を<strong>無料でお付けします</strong></p>
-        <ul>
-          <li>黄金の留め球 待ち受け画像</li>
-          <li>2027年 開運カレンダー</li>
-          <li>金運覚醒ヒーリング</li>
-        </ul>
+        <p class="gbadge">24時間以内に迎えた方だけ</p>
+        <p class="gh">総額<span class="gy">1万円</span>相当を<br><strong>無料でお付けします</strong></p>
+        <ol class="glist">
+          <li>
+            <span class="gno">01</span>
+            <span class="gbody">
+              <b>黄金の留め球 待ち受け画像</b>
+              <i>迎えた球を、スマホの中にも。開くたび、目に入るところへ</i>
+            </span>
+          </li>
+          <li>
+            <span class="gno">02</span>
+            <span class="gbody">
+              <b>2027年 開運カレンダー</b>
+              <i>一粒万倍日、天赦日、寅の日。2027年の動く日が、一枚で分かります</i>
+            </span>
+          </li>
+          <li>
+            <span class="gno">03</span>
+            <span class="gbody">
+              <b>金運覚醒ヒーリング</b>
+              <i>球を迎えた日に、とーから送ります。留まる流れに切り替えるための一回です</i>
+            </span>
+          </li>
+        </ol>
+        <p class="gfoot">本来はどれも、別にお分けしてきたものです。<br>今回だけ、球と一緒にお渡しします。</p>
       </div>
 
       <div class="cdbox">
