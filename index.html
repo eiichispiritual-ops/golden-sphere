@@ -521,7 +521,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
       <p class="meta">送料込み</p>
 
       <div class="gifts">
-        <p class="gh">さらに、総額1万円相当を<br><strong>無料でお付けします</strong></p>
+        <p class="gh">このページを開いてから<strong>24時間以内</strong>に<br>迎えてくださった方には、<br>総額1万円相当を<strong>無料でお付けします</strong></p>
         <ul>
           <li>黄金の留め球 待ち受け画像</li>
           <li>2027年 開運カレンダー</li>
@@ -530,14 +530,13 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
       </div>
 
       <div class="cdbox">
-        <p class="cdlabel">受付終了まで</p>
+        <p class="cdlabel">プレゼントを受け取れるのは、あと</p>
         <div class="cd">
-          <div class="u"><b id="cd-d">—</b><span>日</span></div><i>:</i>
           <div class="u"><b id="cd-h">—</b><span>時間</span></div><i>:</i>
           <div class="u"><b id="cd-m">—</b><span>分</span></div><i>:</i>
           <div class="u last"><b id="cd-s">—</b><span>秒</span></div>
         </div>
-        <p class="cdnote">10月28日（水）23:59で締め切ります</p>
+        <p class="cdnote">24時間を過ぎると、プレゼントは付きません<br>（受付そのものは10月28日（水）23:59まで）</p>
         <div class="stock">
           <div class="srow"><span class="sl">お届けできる数</span><span class="sr">残りわずか</span></div>
           <div class="sbar"><i></i></div>
@@ -684,16 +683,17 @@ function setCta(){
   });
 }
 setCta(); setInterval(setCta, 30000);
+/* 2026-10-10 ユーザー決定: プレゼントの期限は、ページを開くたびに24時間へリセットする */
+const GIFT_MS = 24*3600*1000;
+const giftDeadline = Date.now() + GIFT_MS;
 function tickCd(){
-  const el = document.getElementById("cd-d"); if(!el) return;
-  let diff = CLOSE - new Date();
+  const el = document.getElementById("cd-h"); if(!el) return;
+  let diff = giftDeadline - Date.now();
   if(diff < 0) diff = 0;
-  const d = Math.floor(diff/86400000);
-  const h = Math.floor(diff%86400000/3600000);
+  const h = Math.floor(diff/3600000);
   const m = Math.floor(diff%3600000/60000);
   const sec = Math.floor(diff%60000/1000);
-  el.textContent = d;
-  document.getElementById("cd-h").textContent = String(h).padStart(2,"0");
+  el.textContent = String(h).padStart(2,"0");
   document.getElementById("cd-m").textContent = String(m).padStart(2,"0");
   document.getElementById("cd-s").textContent = String(sec).padStart(2,"0");
 }
