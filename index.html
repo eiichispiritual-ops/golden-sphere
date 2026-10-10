@@ -145,12 +145,10 @@ footer a{color:rgba(178,173,159,.75)}
 .hero .stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 12% 18%,rgba(240,220,174,.7),transparent 60%),radial-gradient(1px 1px at 28% 42%,rgba(240,220,174,.45),transparent 60%),radial-gradient(1.2px 1.2px at 62% 12%,rgba(240,220,174,.6),transparent 60%),radial-gradient(1px 1px at 84% 52%,rgba(240,220,174,.4),transparent 60%),radial-gradient(1px 1px at 44% 66%,rgba(240,220,174,.35),transparent 60%),radial-gradient(1.4px 1.4px at 8% 72%,rgba(240,220,174,.5),transparent 60%),radial-gradient(1px 1px at 92% 22%,rgba(240,220,174,.55),transparent 60%);animation:twinkle 6s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:.6}50%{opacity:1}}
 .hero .moon{background:none;box-shadow:none;width:240px;height:240px;top:6%;right:-46px}
-.hero .moon svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 60px rgba(240,210,140,.22))}
+.hero .moon img{width:100%;height:100%;object-fit:cover;border-radius:50%;filter:drop-shadow(0 0 60px rgba(240,210,140,.26))}
 .hero .ring{width:286px;height:286px;top:calc(6% - 23px);right:-69px;border-color:rgba(201,167,106,.4)}
 .hero .ring::after{content:"";position:absolute;inset:-14px;border:1px dashed rgba(201,167,106,.16);border-radius:50%;animation:spin 90s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.needle{stroke-dasharray:240;stroke-dashoffset:240;animation:needle 3.2s cubic-bezier(.3,.6,.2,1) .4s forwards}
-@keyframes needle{to{stroke-dashoffset:0}}
 .hero .bottom{margin:0 auto;max-width:360px;padding:28px 18px 22px;position:relative}
 .hero .bottom::before,.hero .bottom::after{content:"";position:absolute;width:22px;height:22px;border-color:var(--gold);border-style:solid;opacity:.8}
 .hero .bottom::before{top:0;left:0;border-width:1px 0 0 1px}
@@ -216,26 +214,7 @@ footer{font-size:12px}
 
 <!-- HERO -->
 <div class="hero">
-  <div class="stars"></div><div class="ring"></div><div class="moon" aria-hidden="true"><svg viewBox="0 0 200 200">
-      <defs>
-        <radialGradient id="ob" cx="36%" cy="30%" r="78%">
-          <stop offset="0%" stop-color="#fff6dc"/><stop offset="22%" stop-color="#f0d79a"/>
-          <stop offset="55%" stop-color="#c9a35a"/><stop offset="88%" stop-color="#6e5226"/><stop offset="100%" stop-color="#3a2a12"/>
-        </radialGradient>
-        <radialGradient id="ov" cx="50%" cy="50%" r="50%"><stop offset="70%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".45"/></radialGradient>
-        <clipPath id="oc"><circle cx="100" cy="100" r="96"/></clipPath>
-      </defs>
-      <circle cx="100" cy="100" r="96" fill="url(#ob)"/>
-      <g clip-path="url(#oc)" stroke="#fff3c8" stroke-linecap="round" fill="none">
-        <path class="needle" d="M38 146 L162 64" stroke-width="1" opacity=".7"/>
-        <path class="needle" d="M62 168 L140 44" stroke-width=".6" opacity=".5" style="animation-delay:.8s"/>
-        <path class="needle" d="M28 108 L176 98" stroke-width=".7" opacity=".55" style="animation-delay:1.3s"/>
-        <path class="needle" d="M84 172 L172 128" stroke-width=".45" opacity=".45" style="animation-delay:1.8s"/>
-        <path class="needle" d="M44 62 L158 150" stroke-width=".4" opacity=".4" style="animation-delay:2.3s"/>
-      </g>
-      <circle cx="100" cy="100" r="96" fill="url(#ov)"/>
-      <ellipse cx="70" cy="58" rx="28" ry="16" fill="#fffbef" opacity=".45" transform="rotate(-30 70 58)"/>
-    </svg></div>
+  <div class="stars"></div><div class="ring"></div><div class="moon" aria-hidden="true"><img src="assets/sphere_light.jpg" alt=""></div>
   <div class="vtitle rv">
     <span class="main gg">金色の留め球</span>
     <span class="main gg" style="font-size:27px;margin-top:16px">シトリンスフィア</span>
@@ -285,7 +264,7 @@ footer{font-size:12px}
     <div class="gline"></div>
     <p class="rv">7月の動画でお話しした、ブラジルの聖地の集落。あの集落の家には、<strong>家族がいちばん長く過ごす部屋のまんなかに、金色の球</strong>が置かれてきたそうです。</p>
     <blockquote class="rv">入ってくるものは、<br>出かける時に持ち出される。<br><em>留めておくのは、<br>家のまんなかの球だ。</em></blockquote>
-    <div class="ph rv"><img src="assets/sphere_light.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">朝の光が、石を通る</p></div>
+    <div class="ph rv"><img src="assets/sphere_light.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">黄金色の光を抱いた、シトリンの球</p></div>
     <p class="rv">この石は<strong>シトリン</strong>。黄水晶とも呼ばれる、ブラジルの黄金色の石です。向こうでは<strong>太陽の石</strong>、そして<strong>商人の石</strong>と呼ばれています。昔、お金を扱う家で、その日の売上をしまう場所に置かれてきたからだそうです。</p>
     <p class="rv">持ち歩いたのではありません。<strong>置いた</strong>んです。お金が出入りする、そのすぐ横に。</p>
 
