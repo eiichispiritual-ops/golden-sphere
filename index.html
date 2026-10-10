@@ -233,25 +233,62 @@ footer{font-size:12px}
 .hero .open{font-size:13.5px}
 .hero .lim{font-size:13px}
 .after-box ol li{font-size:16px}
+
+/* ===== HERO v2（全面写真型・2026-10-10） ===== */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:var(--ink);padding-bottom:0}
+.hero-img{position:absolute;top:0;left:0;right:0;height:72svh;
+  background-image:url("assets/sphere_light.jpg");
+  background-size:cover;background-position:center 42%;
+  animation:heroZoom 18s ease-out both}
+@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120%;height:72svh;pointer-events:none;
+  background:radial-gradient(ellipse 54% 46% at 50% 40%,rgba(240,210,140,.22),transparent 68%)}
+.hero-veil{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,13,24,.52) 0%,rgba(10,13,24,.10) 18%,rgba(10,13,24,.06) 38%,rgba(10,13,24,.72) 62%,var(--ink) 78%)}
+.hero-inner{position:relative;z-index:2;margin-top:auto;text-align:center;padding:60svh 24px 30px}
+.hero-kicker{display:inline-block;font-size:11.5px;letter-spacing:.42em;text-indent:.42em;color:var(--gold-hi);margin-bottom:26px;
+  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) .3s both}
+.hero-title{font-size:clamp(30px,8.4vw,40px);font-weight:600;letter-spacing:.17em;text-indent:.17em;line-height:1.58;color:#f6efdc;margin:0 0 16px;
+  text-shadow:0 2px 34px rgba(0,0,0,.7);animation:hTitle 2s cubic-bezier(.19,.7,.26,1) .55s both}
+.hero-sub{font-size:13px;letter-spacing:.3em;text-indent:.3em;color:var(--gold-hi);margin-bottom:34px;line-height:2;
+  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.05s both}
+.hero-lead{font-size:17px;line-height:2.1;letter-spacing:.08em;color:var(--moon);margin:0 0 34px;
+  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.35s both}
+.hero-limit{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.24em;text-indent:.24em;color:#1a1408;
+  background:linear-gradient(100deg,#b8955a,#f3e2b4 46%,#b8955a);padding:11px 26px;border-radius:2px;
+  box-shadow:0 8px 30px rgba(0,0,0,.5);animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.6s both}
+.hero-date{font-size:12.5px;letter-spacing:.12em;color:var(--moon-dim);margin-top:18px;
+  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.8s both}
+.scroll-cue{position:relative;z-index:2;width:1px;height:58px;margin:4px auto 26px;overflow:hidden;
+  background:linear-gradient(180deg,transparent,rgba(201,167,106,.5));animation:hFade 1.6s ease 2s both}
+.scroll-cue::after{content:"";position:absolute;top:0;left:0;width:1px;height:18px;background:var(--gold-hi);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:translateY(-18px);opacity:0}30%{opacity:1}100%{transform:translateY(58px);opacity:0}}
+@keyframes hFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes hTitle{from{opacity:0;transform:translateY(20px);letter-spacing:.34em}to{opacity:1;transform:none;letter-spacing:.17em}}
+@media(min-width:720px){
+  .hero-img{height:76svh;background-position:center 38%}
+  .hero-glow{height:76svh}
+  .hero-inner{padding:64svh 24px 30px}
+}
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="stars"></div><div class="ring"></div><div class="moon" aria-hidden="true"><img src="assets/sphere_light.jpg" alt=""></div>
-  <div class="vtitle rv">
-    <span class="main gg">金色の留め球</span>
-    <span class="main gg" style="font-size:27px;margin-top:16px">シトリンスフィア</span>
-    <span class="sub">入ってきたものを、家のまんなかに留める</span>
+  <div class="hero-img" role="img" aria-label="黄金色に輝くシトリンの球"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker">ブラジルの聖地の集落より</div>
+    <h1 class="hero-title">黄金の留め球<br>シトリンスフィア</h1>
+    <div class="hero-sub">入ってきたものを、家のまんなかに留める</div>
+    <p class="hero-lead">金運は、上げるものではなく、<br>留めるものでした。</p>
+    <div><span class="hero-limit">数 に 限 り が あ り ま す</span></div>
+    <p class="hero-date">10月28日（水）23:59まで</p>
   </div>
-  <div class="bottom rv">
-    <p class="from">ブラジルの聖地の集落より</p>
-    <p class="lead">金運は、上げるものではなく、<br>留めるものでした。</p>
-    <p class="open">10月26日（月）夜7時<br>お迎えの扉が、開きました</p>
-    <p class="lim">受付は10月28日（水）夜11時59分まで</p>
-  </div>
-  <div class="dawn"></div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</div>
   <div class="skirt"></div>
 </div>
 
@@ -534,7 +571,8 @@ function setCta(){
   const now = new Date();
   document.querySelectorAll(".js-cta").forEach(a=>{
     const isBar = a.closest(".bar");
-    if(now < OPEN){
+    // 2026-10-10 ユーザー決定: 配信は10/26に出すので、LPは常に購入できる状態にする
+    if(false){
       a.classList.add("off"); a.removeAttribute("href");
       a.textContent = "10/26（月）夜7時から受付";
     }else if(now > CLOSE){
