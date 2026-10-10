@@ -6,17 +6,20 @@
 <meta name="robots" content="noindex">
 <title>黄金の留め球 シトリンスフィア｜とー</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Zen+Old+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#090d18; --ink2:#0d1322; --ink3:#111a2e;
-  --moon:#eae7dd; --moon-dim:#b2ad9f;
-  --gold:#c9a76a; --gold-hi:#f0dcae; --gold-lo:#8d7040;
+  --ink:#070a12; --ink2:#0b1020; --ink3:#101729;
+  --moon:#efece2; --moon-dim:#a9a496;
+  --gold:#c9a76a; --gold-hi:#f3e3b8; --gold-lo:#8d7040;
+  --amber:#e8b964; --amber-dp:#8a6424;
   --shu:#a63f34; --saffron:#e2953f;
+  --disp:"Zen Old Mincho",serif;
+  --body:"Shippori Mincho B1",serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--ink);color:var(--moon);font-family:"Shippori Mincho B1",serif;font-size:16px;line-height:2.15;letter-spacing:.06em;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;padding-bottom:92px}
+body{background:var(--ink);color:var(--moon);font-family:var(--body);font-size:16.5px;line-height:2.3;letter-spacing:.055em;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;padding-bottom:92px}
 img{max-width:100%;display:block}
 p{margin-bottom:1.7em}
 p:last-child{margin-bottom:0}
@@ -270,6 +273,89 @@ footer{font-size:12px}
   .hero-glow{height:76svh}
   .hero-inner{padding:64svh 24px 30px}
 }
+
+/* ===== デザイン作り込み v2（2026-10-10） ===== */
+
+/* 見出し：明朝の品を立てる */
+h2{font-family:var(--disp);font-size:clamp(23px,6.4vw,28px);font-weight:600;letter-spacing:.14em;line-height:1.95;
+  color:#f6f2e6;text-shadow:0 2px 26px rgba(201,167,106,.14)}
+
+/* ラテン小見出し：金の細字で格を出す */
+.eyebrow{font-family:"Cormorant Garamond",serif;font-size:12px;font-weight:400;letter-spacing:.52em;text-indent:.52em;
+  color:var(--gold);margin-bottom:18px;opacity:.92}
+
+/* 区切り線：中央に菱形を置く */
+.gline{position:relative;width:88px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,167,106,.75),transparent);margin:28px auto 34px}
+.gline::after{content:"";position:absolute;top:50%;left:50%;width:5px;height:5px;
+  transform:translate(-50%,-50%) rotate(45deg);background:var(--gold-hi);box-shadow:0 0 10px rgba(240,220,174,.6)}
+
+/* 本文：行間を広げ、強調を金に */
+.wrap p{font-size:16.5px;line-height:2.3;letter-spacing:.055em}
+.wrap p + p{margin-top:1.55em}
+.wrap strong{color:var(--gold-hi);font-weight:600}
+
+/* セクションの余白を広げて呼吸させる */
+.sec-a,.sec-b{padding:84px 0}
+.sec-b{background:linear-gradient(180deg,var(--ink2) 0%,var(--ink3) 38%,var(--ink) 100%)}
+
+/* 引用：左の金線＋大きめ明朝 */
+blockquote{font-family:var(--disp);font-size:clamp(17px,4.8vw,20px);line-height:2.15;letter-spacing:.1em;
+  color:#f6f2e6;text-align:center;padding:30px 20px;margin:34px 0;position:relative;
+  background:linear-gradient(180deg,rgba(201,167,106,.07),transparent)}
+blockquote::before,blockquote::after{content:"";position:absolute;left:50%;transform:translateX(-50%);
+  width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+blockquote::before{top:0}
+blockquote::after{bottom:0}
+blockquote em{font-style:normal;color:var(--gold-hi)}
+
+/* 価格：金の箔感を強める */
+.pricecard{border:none;position:relative;padding:48px 24px 40px;
+  background:linear-gradient(180deg,rgba(201,167,106,.11),rgba(201,167,106,.025) 46%,rgba(201,167,106,.06));
+  box-shadow:0 0 80px rgba(201,167,106,.12),inset 0 0 0 1px rgba(201,167,106,.3)}
+.pricecard::before{content:"";position:absolute;inset:5px;border:1px solid rgba(201,167,106,.17);pointer-events:none}
+.pricecard .was{font-size:15px;letter-spacing:.14em;color:var(--moon-dim);text-decoration:line-through;
+  text-decoration-color:rgba(166,63,52,.75);text-decoration-thickness:1.5px;margin-bottom:6px}
+.pricecard .now{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,13vw,58px);font-weight:600;letter-spacing:.03em;
+  line-height:1.2;background:linear-gradient(100deg,#b8955a,#f6e8bf 44%,#d4b071 68%,#b8955a);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.pricecard .now small{font-size:16px;letter-spacing:.1em;-webkit-text-fill-color:var(--moon-dim);margin-left:6px}
+.pricecard .meta{font-size:12.5px;letter-spacing:.18em;color:var(--moon-dim);margin-top:10px}
+.pricecard .tag{font-family:var(--disp);font-size:11.5px;letter-spacing:.26em;padding:5px 20px}
+
+/* 特典：金の箔リスト */
+.pricecard .gifts .gh{font-family:var(--disp);font-size:16px;line-height:2;letter-spacing:.08em}
+.pricecard .gifts li{position:relative;padding:11px 12px 11px 34px;text-align:left;letter-spacing:.06em;
+  background:linear-gradient(100deg,rgba(201,167,106,.1),rgba(201,167,106,.03));
+  border:1px solid rgba(201,167,106,.26)}
+.pricecard .gifts li::before{content:"";position:absolute;left:14px;top:50%;width:6px;height:6px;
+  transform:translateY(-50%) rotate(45deg);background:var(--gold-hi);box-shadow:0 0 8px rgba(240,220,174,.55)}
+
+/* カウントダウン：数字を主役に */
+.cd .u b{font-family:"Cormorant Garamond",serif;font-size:clamp(38px,11vw,48px);font-weight:500;color:#f6f2e6}
+.cd .u.last b{background:linear-gradient(100deg,#d4a94e,#f6e8bf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cd i{color:rgba(201,167,106,.4)}
+.cdlabel{font-family:var(--disp);font-size:12.5px;letter-spacing:.3em;text-indent:.3em}
+
+/* 声：枠を上品に */
+.voices img{border-radius:12px;box-shadow:0 3px 20px rgba(0,0,0,.4);border:1px solid rgba(201,167,106,.1)}
+.vnote{font-size:12px;line-height:1.95;letter-spacing:.05em}
+
+/* 仕様表：線を細く */
+.spec th{font-family:var(--disp);letter-spacing:.14em;color:var(--gold);font-weight:500}
+.spec td{letter-spacing:.05em;line-height:1.95}
+
+/* 下部固定バー：金の箔 */
+.bar a{font-family:var(--disp);font-size:15.5px;font-weight:600;letter-spacing:.14em;padding:16px 10px;border-radius:2px;
+  background:linear-gradient(100deg,#b8955a,#f3e2b4 46%,#b8955a);
+  box-shadow:0 -2px 24px rgba(201,167,106,.22)}
+.bar .s{font-size:10.5px;letter-spacing:.1em}
+
+@media(max-width:380px){
+  body{font-size:15.5px;line-height:2.2}
+  .wrap p{font-size:15.5px}
+  .sec-a,.sec-b{padding:68px 0}
+}
 </style>
 </head>
 <body>
@@ -360,6 +446,9 @@ footer{font-size:12px}
       <img src="assets/voice4.png" alt="">
       <img src="assets/voice5.png" alt="">
       <img src="assets/voice6.png" alt="">
+      <img src="assets/voice7.png" alt="">
+      <img src="assets/voice8.png" alt="">
+      <img src="assets/voice9.png" alt="">
     </div>
     <p class="vnote rv">※数年前に迎えた方からいただいた言葉です<br>※あくまで個人の感想です<br>※効果を保証するものではありません</p>
     <p class="rv" style="text-align:center;color:var(--moon-dim);margin-top:30px">全員に同じことが起きるとは、<br>言いません。</p>
