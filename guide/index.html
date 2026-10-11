@@ -429,6 +429,23 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 a.giftrow b::after{content:" ▶";color:var(--gold-hi);font-size:12px}
 .line-box{text-align:center;border:1.5px solid var(--gold);padding:30px 22px;background:linear-gradient(180deg,rgba(201,167,106,.1),rgba(201,167,106,.03))}
 body{padding-bottom:0}
+/* PDCA1 */
+body,.wrap p,h2,summary,.a p,li,td{word-break:auto-phrase;line-break:strict}
+.nw{white-space:nowrap}
+.hero-lead{font-size:clamp(14.5px,4.3vw,17px);letter-spacing:.06em}
+.a b,.wrap strong,.giftrow b{white-space:nowrap}
+@media(max-width:380px){.giftrow{padding:16px 14px}.giftrow b{font-size:15px;letter-spacing:.03em}.giftrow .gk{font-size:11px;padding:5px 8px}}
+blockquote{border-left:none}
+.giftrow{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.giftrow .gt{flex:1}
+.giftrow .gk{flex:none;font-size:11.5px;letter-spacing:.14em;padding:5px 10px;border:1px solid rgba(201,167,106,.45);color:var(--gold-hi);white-space:nowrap}
+a.giftrow{border-color:rgba(201,167,106,.6)}
+a.giftrow .gk{background:linear-gradient(100deg,#b8955a,#f3e2b4 46%,#b8955a);color:#1a1408;border:none;font-weight:600}
+a.giftrow b::after{content:none}
+.roundimg{width:min(56%,200px);margin:6px auto 30px;position:relative}
+.roundimg::after{content:"";position:absolute;inset:-16%;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(240,210,140,.2),transparent 68%)}
+.roundimg img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;position:relative;z-index:1;box-shadow:0 10px 40px rgba(0,0,0,.55),0 0 0 1px rgba(201,167,106,.3)}
+.center{text-align:center}
 </style>
 </head>
 <body>
@@ -452,7 +469,7 @@ body{padding-bottom:0}
     <h2 class="rv gg">迎えてくださって、<br>ありがとうございます</h2>
     <div class="gline"></div>
     <p class="rv">とーです。<br>このページには、届いてから毎日のことまで、知っておいてほしいことを全部まとめました。</p>
-    <p class="rv">迷ったら、いつでもここに戻ってきてください。</p>
+    <p class="rv">迷ったら、いつでも<br>ここに戻ってきてください。</p>
     <nav class="toc rv">
       <b>このページの中身</b>
       <a href="#arrive">届いたら、すること</a>
@@ -472,12 +489,13 @@ body{padding-bottom:0}
     <p class="eyebrow lat rv">WHEN IT ARRIVES</p>
     <h2 class="rv">届いたら、すること</h2>
     <div class="gline"></div>
+    <div class="roundimg rv"><img src="../assets/sphere_light.jpg" alt="シトリンスフィア"></div>
     <p class="rv">箱の中には、<strong>球・台座・とーからの手紙</strong>が入っています。</p>
     <div class="step rv"><div class="n">1</div><div><h3>箱から出す</h3><p>落とさないように、テーブルの上など、低いところで開けてください。</p></div></div>
     <div class="step rv"><div class="n">2</div><div><h3>やわらかい布で、軽く拭く</h3><p>メガネ拭きのような布で十分です。</p></div></div>
     <div class="step rv"><div class="n">3</div><div><h3>台座にのせて、置き場所へ</h3><p>毎日いちばん長く過ごす場所に置きます。</p></div></div>
     <div class="step rv"><div class="n">4</div><div><h3>朝、光を通してみる</h3><p>カーテンを開けて、少しのあいだ光にかざしてみてください。黄金色が、いちばんきれいに見える時間です。</p></div></div>
-    <p class="rv" style="text-align:center;margin-top:30px"><em>手を合わせたり、声をかけたりする必要は、<br>ありません。</em></p>
+    <p class="rv center" style="margin-top:30px"><em>手を合わせたり、<br>声をかけたりする必要は、<br>ありません。</em></p>
     <p class="rv" style="color:var(--moon-dim);font-size:15px">天然の石なので、色の濃さや、内側の細い筋の入り方は一つずつ違います。それも含めて、あなたの一つです。</p>
   </div>
 </section>
@@ -492,8 +510,8 @@ body{padding-bottom:0}
     <div class="ok rv">
       <b>たとえば</b>
       <ul>
-        <li>家族で過ごすリビングのテーブルや棚</li>
-        <li>一人暮らしなら、いちばん長くいる部屋</li>
+        <li>リビングのテーブルや棚</li>
+        <li>一人暮らしなら、<br>いちばん長くいる部屋</li>
         <li>リビングが自分の場所でなければ、台所のテーブルや自分の机</li>
         <li>家で仕事をしている方は、仕事をする机のそば</li>
       </ul>
@@ -519,7 +537,7 @@ body{padding-bottom:0}
     <p class="rv" style="text-align:center;font-size:18px"><strong>特別にすることは、ありません。</strong></p>
     <p class="rv">毎日の暮らしのそばに、そのまま置いておいてください。拝んだり、願いごとを唱えたりしなくても大丈夫です。</p>
     <p class="rv">ふと目に入ったときに、「今日もここにいてくれる」と思い出す。それくらいで十分です。</p>
-    <p class="rv" style="color:var(--moon-dim);font-size:15px">何かを感じようと、がんばらなくて大丈夫です。</p>
+    <p class="rv center" style="color:var(--moon-dim);font-size:15px">何かを感じようと、<br>がんばらなくて大丈夫です。</p>
   </div>
 </section>
 
@@ -556,9 +574,9 @@ body{padding-bottom:0}
     <div class="gline"></div>
     <p class="rv">受け取り方は、ご購入のあとにお送りしたLINEに書いてあります。</p>
     <div class="rv">
-      <a class="giftrow" href="https://eiichispiritual-ops.github.io/golden-sphere/gifts/2027/calendar/"><b>2027年 開運カレンダー</b><span>月ごとの開運日が分かります。印刷して使えるPDFもあります。</span></a>
-      <div class="giftrow"><b>黄金の待ち受け画像</b><span>ご購入のお礼のLINEにある、リンクからダウンロードしてください。</span></div>
-      <div class="giftrow"><b>金運覚醒ヒーリング</b><span>お礼のLINEのバナーをタップすると、10分後に受け取り方が届きます。</span></div>
+      <a class="giftrow" href="https://eiichispiritual-ops.github.io/golden-sphere/gifts/2027/calendar/"><span class="gt"><b>2027年 開運カレンダー</b><span>月ごとの開運日が分かります。印刷して使えるPDFもあります。</span></span><span class="gk">ひらく ▶</span></a>
+      <div class="giftrow"><span class="gt"><b>黄金の待ち受け画像</b><span>お礼のLINEにあるリンクから、ダウンロードしてください。</span></span><span class="gk">LINEで</span></div>
+      <div class="giftrow"><span class="gt"><b>金運覚醒ヒーリング</b><span>お礼のLINEのバナーをタップすると、10分後に受け取り方が届きます。</span></span><span class="gk">LINEで</span></div>
     </div>
   </div>
 </section>
@@ -608,6 +626,14 @@ body{padding-bottom:0}
 </footer>
 
 <script>
+/* 行末に1〜2文字だけ残らないよう、各文の最後の5文字をつなげる */
+document.querySelectorAll('.wrap p:not(.eyebrow):not(.lat), .wrap li, summary, td, .gt > span, .step p').forEach(el=>{
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let last=null,n;
+  while(n=w.nextNode()){if(n.textContent.trim())last=n;}
+  if(!last)return;const t=last.textContent.replace(/\s+$/,'');if(t.length<8)return;
+  const k=5,span=document.createElement('span');span.className='nw';span.textContent=t.slice(-k);
+  last.textContent=t.slice(0,-k);last.parentNode.insertBefore(span,last.nextSibling);
+});
 const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv,.tl').forEach(el=>io.observe(el));
 </script>
