@@ -446,7 +446,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <div class="gline"></div>
     <p class="rv" style="text-align:center;color:var(--moon-dim)">突然の販売では、ありません。</p>
     <div class="tl rv">
-      <div class="ti"><p class="d">10月20日</p><p>2027年の金運を覚醒させる鑑定を、お届けしました。</p></div>
+      <div class="ti"><p class="d">10月20日</p><p>2027年金運覚醒鑑定の受付を始めました。鑑定書は回答の翌日夜8時にお届けしました。</p></div>
       <div class="ti"><p class="d">10月23日</p><p>止められたメッセージを、お見せしました。</p></div>
       <div class="ti"><p class="d">10月24日</p><p>止められた話を、動画で全部お話ししました。</p></div>
       <div class="ti now"><p class="d">10月26日 夜7時</p><p>お迎えの扉を、開きました。</p></div>
@@ -560,7 +560,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
       <p class="meta">送料込み</p>
 
       <div class="gifts">
-        <p class="gbadge">24時間以内に迎えた方だけ</p>
+        <p class="gbadge">受付期間中に迎えた方全員へ</p>
         <p class="gh">総額<span class="gy">1万円</span>相当を<br><strong>無料でお付けします</strong></p>
         <ol class="glist">
           <li>
@@ -574,28 +574,23 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
             <span class="gno">02</span>
             <span class="gbody">
               <b>2027年 開運カレンダー</b>
-              <i>一粒万倍日、天赦日、寅の日。2027年の動く日が、一枚で分かります</i>
+              <i>一粒万倍日、天赦日、寅の日。月ごとの開運日が分かります。印刷用のPDFもあります</i>
             </span>
           </li>
           <li>
             <span class="gno">03</span>
             <span class="gbody">
               <b>金運覚醒ヒーリング</b>
-              <i>球を迎えた日に、とーから送ります。留まる流れに切り替えるための一回です</i>
+              <i>ご購入のお礼のLINEから受け取れます。バナーをタップすると、10分後に受け取り方が届きます</i>
             </span>
           </li>
         </ol>
-        <p class="gfoot">本来はどれも、別にお分けしてきたものです。<br>今回だけ、球と一緒にお渡しします。</p>
+        <p class="gfoot">3つの贈りものは、ご購入のお礼のLINEで<br>まとめてご案内します。</p>
       </div>
 
       <div class="cdbox">
-        <p class="cdlabel">プレゼントを受け取れるのは、あと</p>
-        <div class="cd">
-          <div class="u"><b id="cd-h">—</b><span>時間</span></div><i>:</i>
-          <div class="u"><b id="cd-m">—</b><span>分</span></div><i>:</i>
-          <div class="u last"><b id="cd-s">—</b><span>秒</span></div>
-        </div>
-        <p class="cdnote">24時間を過ぎると、プレゼントは付きません<br>（受付そのものは10月28日（水）23:59まで）</p>
+        <p class="cdlabel">3つの贈りものは、ご購入者全員へ</p>
+        <p class="cdnote">受付は10月28日（水）23:59まで。<br>なくなり次第、受付を終了します。</p>
         <div class="stock">
           <div class="srow"><span class="sl">お届けできる数</span><span class="sr">残りわずか</span></div>
           <div class="sbar"><i></i></div>
@@ -671,7 +666,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <div class="gline"></div>
     <div class="rv">
     <details><summary>どこに置けばいいですか？</summary><div class="a"><p>毎日いちばん長く過ごす場所です。ご注文のあとに教えていただければ、合う一つを選びます。</p></div></details>
-    <details><summary>部屋が狭くても置けますか？</summary><div class="a"><p>直径約5cmなので、小さなテーブルの上にも置けます。</p></div></details>
+    <details><summary>部屋が狭くても置けますか？</summary><div class="a"><p>小さなテーブルの上にも置けます。転がらないよう台座にのせ、安定した場所を選んでください。</p></div></details>
     <details><summary>家族に相談してもいいですか？</summary><div class="a"><p>ぜひ、相談してから決めてください。受付は<b>10月28日（水）夜11時59分</b>までです。</p></div></details>
     <details><summary>家族に知られずに受け取れますか？</summary><div class="a"><p>送り状の品名は「雑貨」でお送りします。</p></div></details>
     <details><summary>7月の石と一緒に使えますか？</summary><div class="a"><p>使えます。役目が違います。</p></div></details>
@@ -742,21 +737,6 @@ function setCta(){
   });
 }
 setCta(); setInterval(setCta, 30000);
-/* 2026-10-10 ユーザー決定: プレゼントの期限は、ページを開くたびに24時間へリセットする */
-const GIFT_MS = 24*3600*1000;
-const giftDeadline = Date.now() + GIFT_MS;
-function tickCd(){
-  const el = document.getElementById("cd-h"); if(!el) return;
-  let diff = giftDeadline - Date.now();
-  if(diff < 0) diff = 0;
-  const h = Math.floor(diff/3600000);
-  const m = Math.floor(diff%3600000/60000);
-  const sec = Math.floor(diff%60000/1000);
-  el.textContent = String(h).padStart(2,"0");
-  document.getElementById("cd-m").textContent = String(m).padStart(2,"0");
-  document.getElementById("cd-s").textContent = String(sec).padStart(2,"0");
-}
-tickCd(); setInterval(tickCd, 1000);
 const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv,.tl').forEach(el=>io.observe(el));
 </script>
