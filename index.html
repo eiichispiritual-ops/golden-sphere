@@ -7,411 +7,13 @@
 <title>黄金の留め球 シトリンスフィア｜とー</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Zen+Old+Mincho:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#070a12; --ink2:#0b1020; --ink3:#101729;
-  --moon:#efece2; --moon-dim:#a9a496;
-  --gold:#c9a76a; --gold-hi:#f3e3b8; --gold-lo:#8d7040;
-  --amber:#e8b964; --amber-dp:#8a6424;
-  --shu:#a63f34; --saffron:#e2953f;
-  --disp:"Zen Old Mincho",serif;
-  --body:"Shippori Mincho B1",serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--ink);color:var(--moon);font-family:var(--body);font-size:16.5px;line-height:2.3;letter-spacing:.055em;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;padding-bottom:92px}
-img{max-width:100%;display:block}
-p{margin-bottom:1.7em}
-p:last-child{margin-bottom:0}
-em{font-style:normal;color:var(--gold-hi)}
-strong{color:var(--gold-hi);font-weight:600}
-.wrap{max-width:600px;margin:0 auto;padding:0 26px}
-.lat{font-family:"Cormorant Garamond",serif}
-
-.gg{background:linear-gradient(120deg,#f4e2b8 0%,#dcbe85 30%,#a8874e 50%,#dcbe85 70%,#f4e2b8 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s ease-in-out infinite}
-@keyframes sheen{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
-
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s cubic-bezier(.22,.61,.36,1),transform 1.1s cubic-bezier(.22,.61,.36,1)}
-.rv.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
-
-section{padding:92px 0;position:relative}
-.sec-a{background:var(--ink)}
-.sec-b{background:linear-gradient(180deg,var(--ink2),var(--ink))}
-.eyebrow{text-align:center;font-size:11px;letter-spacing:.55em;color:var(--gold);margin-bottom:14px;font-family:"Cormorant Garamond",serif}
-h2{font-size:24px;font-weight:800;text-align:center;letter-spacing:.16em;line-height:1.9;margin-bottom:10px}
-.gline{width:54px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:26px auto}
-.orn{display:flex;align-items:center;gap:12px;justify-content:center;margin:28px auto}
-.orn::before,.orn::after{content:"";width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
-.orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
-.orn i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg);box-shadow:0 0 10px rgba(201,167,106,.7)}
-
-.band{height:120px;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23c9a76a' stroke-opacity='.10' stroke-width='1'%3E%3Ccircle cx='0' cy='60' r='56'/%3E%3Ccircle cx='0' cy='60' r='42'/%3E%3Ccircle cx='0' cy='60' r='28'/%3E%3Ccircle cx='60' cy='60' r='56'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='120' cy='60' r='56'/%3E%3Ccircle cx='120' cy='60' r='42'/%3E%3Ccircle cx='120' cy='60' r='28'/%3E%3Ccircle cx='30' cy='30' r='56'/%3E%3Ccircle cx='30' cy='30' r='42'/%3E%3Ccircle cx='90' cy='30' r='56'/%3E%3Ccircle cx='90' cy='30' r='42'/%3E%3C/g%3E%3C/svg%3E");background-size:112px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 45%,transparent);mask-image:linear-gradient(180deg,transparent,#000 45%,transparent)}
-
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:calc(5svh + 170px);position:relative;overflow:hidden;background:radial-gradient(ellipse 120% 70% at 50% -10%,#16203a 0%,var(--ink) 62%)}
-.hero .moon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(78vw,340px);height:min(78vw,340px);border-radius:50%;box-shadow:0 0 150px 30px rgba(240,210,140,.16);animation:moonfloat 9s ease-in-out infinite}
-@keyframes moonfloat{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,calc(-50% - 12px))}}
-.hero .ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(94vw,410px);height:min(94vw,410px);border:1px solid rgba(201,167,106,.3);border-radius:50%}
-.hero .vtitle{position:absolute;left:22px;top:7%;z-index:3;display:flex;flex-direction:row-reverse;gap:18px;align-items:flex-start}
-.hero .vtitle .main{writing-mode:vertical-rl;font-size:clamp(30px,8.6vw,42px);font-weight:800;letter-spacing:.2em;line-height:1;white-space:nowrap;text-shadow:0 3px 10px rgba(0,0,0,.5)}
-.hero .vtitle .sub{writing-mode:vertical-rl;font-size:12.5px;letter-spacing:.34em;color:var(--moon-dim);margin-top:34px;white-space:nowrap}
-.hero .bottom{position:relative;z-index:2;text-align:center;margin-top:40px}
-.hero .open{font-size:12px;letter-spacing:.34em;color:var(--gold-hi);border:1px solid rgba(201,167,106,.5);display:inline-block;padding:9px 22px;background:rgba(201,167,106,.07)}
-.hero .lim{margin-top:20px;font-size:12.5px;letter-spacing:.5em;color:var(--moon-dim)}
-.hero .skirt{position:absolute;left:0;right:0;bottom:0;height:26svh;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23c9a76a' stroke-opacity='.09' stroke-width='1'%3E%3Ccircle cx='0' cy='60' r='56'/%3E%3Ccircle cx='0' cy='60' r='42'/%3E%3Ccircle cx='0' cy='60' r='28'/%3E%3Ccircle cx='60' cy='60' r='56'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Ccircle cx='60' cy='60' r='28'/%3E%3Ccircle cx='120' cy='60' r='56'/%3E%3Ccircle cx='120' cy='60' r='42'/%3E%3Ccircle cx='120' cy='60' r='28'/%3E%3Ccircle cx='30' cy='30' r='56'/%3E%3Ccircle cx='30' cy='30' r='42'/%3E%3Ccircle cx='90' cy='30' r='56'/%3E%3Ccircle cx='90' cy='30' r='42'/%3E%3C/g%3E%3C/svg%3E");background-size:112px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 75%);mask-image:linear-gradient(180deg,transparent,#000 75%)}
-
-.tl{position:relative;padding-left:30px;margin-top:14px}
-.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(201,167,106,.15));transform-origin:top;transform:scaleY(0);transition:transform 1.6s ease .2s}
-.tl.on::before{transform:scaleY(1)}
-.tl .ti{position:relative;padding:0 0 26px 16px}
-.tl .ti::before{content:"";position:absolute;left:-26px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1.5px solid var(--gold)}
-.tl .ti.now::before{background:var(--gold);box-shadow:0 0 12px rgba(201,167,106,.9)}
-.tl .d{font-size:12px;color:var(--gold-hi);letter-spacing:.22em;margin-bottom:2px}
-.tl p{font-size:14.5px;color:var(--moon-dim);margin-bottom:0}
-
-blockquote{border-left:2px solid var(--gold);padding:8px 0 8px 22px;margin:30px 0;font-size:15px;color:var(--moon-dim)}
-blockquote em{color:var(--gold-hi)}
-
-.ph{margin:34px auto;border:1px solid rgba(201,167,106,.3);padding:8px;background:var(--ink2)}
-.ph img{width:100%}
-.ph .cap{font-size:11.5px;color:var(--moon-dim);text-align:center;letter-spacing:.14em;padding:10px 4px 4px}
-
-.spec{width:100%;border-collapse:collapse;margin:26px 0;font-size:14px}
-.spec th{width:88px;text-align:left;color:var(--gold-hi);font-weight:500;padding:13px 8px;border-bottom:1px solid rgba(234,231,221,.1);vertical-align:top;letter-spacing:.12em}
-.spec td{padding:13px 8px;border-bottom:1px solid rgba(234,231,221,.1);color:var(--moon-dim)}
-
-.pricecard{border:1.5px double var(--gold);padding:44px 26px;text-align:center;background:linear-gradient(180deg,rgba(201,167,106,.09),rgba(201,167,106,.02));position:relative;box-shadow:0 0 70px rgba(201,167,106,.1)}
-.pricecard .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--ink);border:1px solid var(--gold);color:var(--gold-hi);font-size:11px;letter-spacing:.3em;padding:4px 18px;white-space:nowrap}
-.pricecard .was{font-size:16px;color:var(--moon-dim);text-decoration:line-through;letter-spacing:.1em}
-.pricecard .now{font-size:52px;font-weight:800;letter-spacing:.04em;line-height:1.3;font-family:"Cormorant Garamond","Shippori Mincho B1",serif}
-.pricecard .now small{font-size:18px}
-.pricecard .meta{font-size:12px;color:var(--moon-dim);letter-spacing:.14em;margin-top:4px}
-.pricecard .off{display:inline-block;margin-top:16px;border:1px solid var(--shu);color:#e8b0a6;font-size:12px;letter-spacing:.24em;padding:5px 16px}
-
-.you li{list-style:none;padding:14px 4px 14px 38px;position:relative;border-bottom:1px solid rgba(234,231,221,.09);font-size:15px}
-.you li::before{content:"";position:absolute;left:8px;top:50%;transform:translateY(-50%) rotate(45deg);width:8px;height:8px;background:var(--gold)}
-
-.step{display:flex;gap:18px;margin-bottom:24px;align-items:flex-start}
-.step .n{flex:none;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-size:15px;background:rgba(201,167,106,.07);margin-top:4px}
-.step h3{font-size:16px;font-weight:600;margin-bottom:2px}
-.step p{font-size:13.5px;color:var(--moon-dim);margin-bottom:0}
-.pay{border:1px solid rgba(201,167,106,.3);background:var(--ink2);padding:20px 22px;font-size:13px;color:var(--moon-dim);line-height:2;margin-top:28px}
-.pay b{color:var(--gold-hi);font-weight:600;display:block;letter-spacing:.2em;font-size:12px;margin-bottom:6px}
-
-.after-box{border:1.5px solid var(--gold);background:linear-gradient(180deg,rgba(201,167,106,.1),rgba(201,167,106,.03));padding:34px 26px}
-.after-box h3{color:var(--gold-hi);font-size:16px;letter-spacing:.2em;margin-bottom:14px;text-align:center}
-.after-box ol{margin:0 0 18px 0;padding-left:0;counter-reset:st}
-.after-box ol li{list-style:none;counter-increment:st;position:relative;padding:10px 0 10px 40px;font-size:15px;border-bottom:1px solid rgba(234,231,221,.1)}
-.after-box ol li::before{content:counter(st);position:absolute;left:4px;top:50%;transform:translateY(-50%);width:26px;height:26px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-size:13px}
-.warn{font-size:13px;color:#e0b9b0;border-left:2px solid var(--shu);padding-left:14px;margin-top:16px}
-
-details{border-bottom:1px solid rgba(234,231,221,.1)}
-summary{cursor:pointer;list-style:none;padding:20px 34px 20px 4px;font-size:15px;font-weight:600;position:relative;letter-spacing:.06em}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"";position:absolute;right:10px;top:50%;width:9px;height:9px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:translateY(-70%) rotate(45deg);transition:transform .35s ease}
-details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
-.a{padding:0 4px 24px;font-size:14px;color:var(--moon-dim)}
-.a b{color:var(--gold-hi);font-weight:600}
-
-.last{text-align:center}
-.hanko{margin:30px auto 0;width:46px;height:46px;background:linear-gradient(160deg,#a63f34,#8c2f27);color:#f5efe2;font-size:13.5px;display:flex;align-items:center;justify-content:center;writing-mode:vertical-rl;letter-spacing:.12em;border-radius:4px;transform:rotate(-2.5deg);box-shadow:inset 0 0 0 1.4px rgba(245,239,226,.85),0 2px 8px rgba(0,0,0,.5);font-weight:600}
-
-.cta{display:block;text-align:center;background:linear-gradient(160deg,#e9cf96,#b8945c);color:var(--ink);font-weight:800;font-size:17px;letter-spacing:.2em;padding:21px 12px;border-radius:3px;text-decoration:none;box-shadow:0 8px 34px rgba(201,167,106,.35);margin:36px auto 10px;max-width:420px;animation:breathe 3.6s ease-in-out infinite}
-@keyframes breathe{0%,100%{box-shadow:0 8px 30px rgba(201,167,106,.3)}50%{box-shadow:0 8px 46px rgba(201,167,106,.55)}}
-.ctasub{text-align:center;font-size:11.5px;color:var(--moon-dim);letter-spacing:.1em}
-
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(9,13,24,.92);backdrop-filter:blur(8px);border-top:1px solid rgba(201,167,106,.4);padding:12px 14px calc(12px + env(safe-area-inset-bottom))}
-.bar a{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(160deg,#e9cf96,#b8945c);color:var(--ink);text-decoration:none;font-weight:800;font-size:14.5px;letter-spacing:.08em;padding:14px 10px;border-radius:3px}
-.bar .s{font-size:10.5px;font-weight:500}
-
-footer{padding:44px 0 60px;text-align:center;font-size:11px;color:rgba(178,173,159,.55);letter-spacing:.1em;line-height:2.4}
-footer a{color:rgba(178,173,159,.75)}
-.legal{font-size:11px;color:rgba(178,173,159,.55);line-height:2.2;margin-top:26px;text-align:center}
-
-
-/* ── とー版 ── */
-.hero .moon{background:radial-gradient(circle at 34% 30%,#fff6dc 0%,#f0d79a 22%,#c9a35a 52%,#7a5a2a 88%,#4a3417 100%);box-shadow:0 0 140px 30px rgba(240,210,140,.18),inset -18px -22px 40px rgba(0,0,0,.35)}
-.hero .moon::after{content:"";position:absolute;inset:0;border-radius:50%;background:repeating-linear-gradient(118deg,transparent 0 9px,rgba(255,236,180,.55) 9px 10px,transparent 10px 23px),repeating-linear-gradient(64deg,transparent 0 14px,rgba(255,226,160,.35) 14px 15px,transparent 15px 31px);mix-blend-mode:screen;opacity:.75}
-.hero .dawn{position:absolute;left:0;right:0;bottom:0;height:52svh;background:linear-gradient(180deg,rgba(20,40,34,0) 0%,rgba(24,52,40,.22) 55%,rgba(201,167,106,.16) 100%);pointer-events:none}
-.hero .from{font-size:11px;letter-spacing:.4em;color:var(--gold-hi);margin-bottom:12px}
-.hero .lead{font-size:14px;color:var(--moon);letter-spacing:.14em;margin-bottom:18px}
-.todo{color:#ffb4a8;background:rgba(166,63,52,.18);padding:0 4px;border-radius:2px}
-.cta.off,.bar a.off{background:linear-gradient(160deg,#4a4a52,#2e2e36);color:#d9d6cc;box-shadow:none;animation:none;pointer-events:none}
-.notfor{border:1px solid rgba(166,63,52,.6);background:rgba(166,63,52,.08);padding:22px 22px;margin:28px 0;font-size:14px}
-.notfor b{display:block;color:#e8b0a6;letter-spacing:.2em;font-size:12.5px;margin-bottom:8px}
-.notfor li{list-style:none;padding:6px 0 6px 20px;position:relative}
-.notfor li::before{content:"・";position:absolute;left:0;color:#e8b0a6}
-.qpair{text-align:center;font-size:17px;line-height:2.2;margin:30px 0}
-
-/* ── v1.5 磨き込み ── */
-.hero{background:radial-gradient(ellipse 120% 70% at 70% 0%,#1a2440 0%,var(--ink) 60%)}
-.hero .stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 12% 18%,rgba(240,220,174,.7),transparent 60%),radial-gradient(1px 1px at 28% 42%,rgba(240,220,174,.45),transparent 60%),radial-gradient(1.2px 1.2px at 62% 12%,rgba(240,220,174,.6),transparent 60%),radial-gradient(1px 1px at 84% 52%,rgba(240,220,174,.4),transparent 60%),radial-gradient(1px 1px at 44% 66%,rgba(240,220,174,.35),transparent 60%),radial-gradient(1.4px 1.4px at 8% 72%,rgba(240,220,174,.5),transparent 60%),radial-gradient(1px 1px at 92% 22%,rgba(240,220,174,.55),transparent 60%);animation:twinkle 6s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.6}50%{opacity:1}}
-.hero .moon{background:none}
-.pricecard .gifts{margin-top:30px;padding-top:26px;border-top:1px solid rgba(201,167,106,.3)}
-.pricecard .gifts .gh{font-size:15px;line-height:1.9;color:var(--moon);margin-bottom:16px}
-.pricecard .gifts .gh strong{color:var(--gold-hi)}
-.pricecard .gifts ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
-.pricecard .gifts li{font-size:14.5px;color:var(--moon);padding:9px 10px;background:rgba(201,167,106,.07);border:1px solid rgba(201,167,106,.22)}
-.cdbox{margin-top:30px;padding-top:26px;border-top:1px solid rgba(201,167,106,.3)}
-.cdlabel{font-size:12px;letter-spacing:.26em;color:var(--gold-hi);margin-bottom:14px}
-.cd{display:flex;align-items:flex-start;justify-content:center;gap:4px}
-.cd .u{display:flex;flex-direction:column;align-items:center;min-width:52px}
-.cd .u b{font-family:"Cormorant Garamond","Shippori Mincho B1",serif;font-size:40px;line-height:1;color:var(--moon);font-weight:400;letter-spacing:.02em}
-.cd .u.last b{color:var(--gold-hi)}
-.cd .u span{font-size:11px;letter-spacing:.2em;color:var(--moon-dim);margin-top:9px}
-.cd i{font-style:normal;font-size:26px;line-height:1.1;color:rgba(201,167,106,.45);padding-top:4px}
-.cdnote{font-size:12.5px;color:var(--moon-dim);margin-top:18px}
-.stock{margin-top:26px;text-align:left}
-.srow{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
-.srow .sl{font-size:12.5px;color:var(--moon-dim);letter-spacing:.08em}
-.srow .sr{font-family:"Shippori Mincho B1",serif;font-size:17px;color:var(--gold-hi);letter-spacing:.1em}
-.sbar{height:7px;background:rgba(255,255,255,.08);border-radius:4px;overflow:hidden}
-.sbar i{display:block;height:100%;width:88%;background:linear-gradient(90deg,#8a6a2e,var(--gold-hi));border-radius:4px}
-.snote{font-size:11.5px;line-height:1.8;color:var(--moon-dim);margin-top:10px;text-align:center}
-@media(max-width:360px){.cd .u{min-width:44px}.cd .u b{font-size:33px}}
-.voices{display:flex;flex-direction:column;gap:14px;margin:26px 0 18px}
-.voices img{width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 2px 14px rgba(0,0,0,.28)}
-.vnote{font-size:12.5px;line-height:1.85;color:var(--moon-dim);text-align:center;margin-top:4px}
-.hero .moon img{width:100%;height:100%;object-fit:cover;border-radius:50%;filter:drop-shadow(0 0 60px rgba(240,210,140,.26))}
-.hero .ring{border-color:rgba(201,167,106,.4)}
-.hero .ring::after{content:"";position:absolute;inset:-14px;border:1px dashed rgba(201,167,106,.16);border-radius:50%;animation:spin 90s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero .bottom{margin:0 auto;max-width:360px;padding:28px 18px 22px;position:relative}
-.hero .bottom::before,.hero .bottom::after{content:"";position:absolute;width:22px;height:22px;border-color:var(--gold);border-style:solid;opacity:.8}
-.hero .bottom::before{top:0;left:0;border-width:1px 0 0 1px}
-.hero .bottom::after{bottom:0;right:0;border-width:0 1px 1px 0}
-.hero .lead{font-size:15px;letter-spacing:.14em;line-height:2.1;margin-bottom:18px}
-.hero .open{line-height:1.9;padding:10px 20px}
-.eyebrow{display:flex;align-items:center;justify-content:center;gap:12px}
-.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
-.eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
-h2{text-shadow:0 2px 18px rgba(201,167,106,.12)}
-.pricecard{border:1px solid rgba(201,167,106,.55);box-shadow:0 0 0 6px var(--ink),0 0 0 7px rgba(201,167,106,.25),0 0 80px rgba(201,167,106,.12)}
-.pricecard .corner{position:absolute;width:16px;height:16px;border-color:var(--gold-hi);border-style:solid}
-.pricecard .c1{top:-1px;left:-1px;border-width:2px 0 0 2px}.pricecard .c2{top:-1px;right:-1px;border-width:2px 2px 0 0}
-.pricecard .c3{bottom:-1px;left:-1px;border-width:0 0 2px 2px}.pricecard .c4{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
-.spec{border-top:1px solid rgba(201,167,106,.4)}
-blockquote{background:linear-gradient(90deg,rgba(201,167,106,.08),transparent)}
-.cta{position:relative}
-.cta::after{content:"";position:absolute;inset:4px;border:1px solid rgba(9,13,24,.28);border-radius:2px;pointer-events:none}
-.you li{transition:background .3s}
-.todo{color:#ffb4a8;background:rgba(166,63,52,.18);padding:0 4px;border-radius:2px}
-
-/* ── v1.5 調整 ── */
-.hero{padding-bottom:calc(2svh + 112px)}
-.hero .vtitle{top:7%}
-.hero .vtitle .main{font-size:38px}
-.hero .bottom::before,.hero .bottom::after{display:none}
-.hero .bottom{background:none;padding-top:28px}
-.hero .moon::after{display:none}
-.hero .lim{letter-spacing:.2em;font-size:12px}
-.hero .from{letter-spacing:.3em}
-
-/* ── 読みやすさ（50〜60代向け） ── */
-body{font-size:17px;line-height:2.1}
-.wrap{padding:0 24px}
-h2{font-size:25px}
-.eyebrow{font-size:12.5px}
-.tl p{font-size:15.5px}
-.tl .d{font-size:13.5px}
-blockquote{font-size:17px;line-height:2.2}
-.ph .cap{font-size:13px}
-.spec{font-size:15.5px}.spec th{width:84px;font-size:14px}
-.you li{font-size:16.5px}
-.step h3{font-size:17px}.step p{font-size:15px}
-.pay{font-size:15px;line-height:2}
-.pay b{font-size:13px}
-summary{font-size:16.5px}
-.a{font-size:15.5px}
-.ctasub{font-size:13px}
-.legal{font-size:12px}
-footer{font-size:12px}
-.cta{font-size:18px}
-.bar a{font-size:16px}.bar .s{font-size:11.5px}
-.notfor{font-size:15.5px}
-.qpair{font-size:19px}
-.hero .vtitle .sub{font-size:13.5px}
-.hero .lead{font-size:16.5px}
-.hero .open{font-size:13.5px}
-.hero .lim{font-size:13px}
-.after-box ol li{font-size:16px}
-
-/* ===== HERO v2（全面写真型・2026-10-10） ===== */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:var(--ink);padding-bottom:0}
-.hero-img{position:absolute;top:0;left:0;right:0;height:72svh;
-  background-image:url("assets/sphere_hero_20261018.png");
-  background-size:cover;background-position:center 42%;
-  animation:heroZoom 18s ease-out both}
-@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
-.hero-glow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120%;height:72svh;pointer-events:none;
-  background:radial-gradient(ellipse 54% 46% at 50% 40%,rgba(240,210,140,.22),transparent 68%)}
-.hero-veil{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(180deg,rgba(10,13,24,.52) 0%,rgba(10,13,24,.10) 18%,rgba(10,13,24,.06) 38%,rgba(10,13,24,.72) 62%,var(--ink) 78%)}
-.hero-inner{position:relative;z-index:2;margin-top:auto;text-align:center;padding:60svh 24px 30px}
-.hero-kicker{display:inline-block;font-size:11.5px;letter-spacing:.42em;text-indent:.42em;color:var(--gold-hi);margin-bottom:26px;
-  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) .3s both}
-.hero-title{font-size:clamp(30px,8.4vw,40px);font-weight:600;letter-spacing:.17em;text-indent:.17em;line-height:1.58;color:#f6efdc;margin:0 0 16px;
-  text-shadow:0 2px 34px rgba(0,0,0,.7);animation:hTitle 2s cubic-bezier(.19,.7,.26,1) .55s both}
-.hero-sub{font-size:13px;letter-spacing:.3em;text-indent:.3em;color:var(--gold-hi);margin-bottom:34px;line-height:2;
-  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.05s both}
-.hero-lead{font-size:17px;line-height:2.1;letter-spacing:.08em;color:var(--moon);margin:0 0 34px;
-  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.35s both}
-.hero-limit{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.24em;text-indent:.24em;color:#1a1408;
-  background:linear-gradient(100deg,#b8955a,#f3e2b4 46%,#b8955a);padding:11px 26px;border-radius:2px;
-  box-shadow:0 8px 30px rgba(0,0,0,.5);animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.6s both}
-.hero-date{font-size:12.5px;letter-spacing:.12em;color:var(--moon-dim);margin-top:18px;
-  animation:hFade 1.6s cubic-bezier(.22,.6,.24,1) 1.8s both}
-.scroll-cue{position:relative;z-index:2;width:1px;height:58px;margin:4px auto 26px;overflow:hidden;
-  background:linear-gradient(180deg,transparent,rgba(201,167,106,.5));animation:hFade 1.6s ease 2s both}
-.scroll-cue::after{content:"";position:absolute;top:0;left:0;width:1px;height:18px;background:var(--gold-hi);animation:cue 2.2s ease-in-out infinite}
-@keyframes cue{0%{transform:translateY(-18px);opacity:0}30%{opacity:1}100%{transform:translateY(58px);opacity:0}}
-@keyframes hFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-@keyframes hTitle{from{opacity:0;transform:translateY(20px);letter-spacing:.34em}to{opacity:1;transform:none;letter-spacing:.17em}}
-@media(min-width:720px){
-  .hero-img{height:76svh;background-position:center 38%}
-  .hero-glow{height:76svh}
-  .hero-inner{padding:64svh 24px 30px}
-}
-
-/* ===== デザイン作り込み v2（2026-10-10） ===== */
-
-/* 見出し：明朝の品を立てる */
-h2{font-family:var(--disp);font-size:clamp(23px,6.4vw,28px);font-weight:600;letter-spacing:.14em;line-height:1.95;
-  color:#f6f2e6;text-shadow:0 2px 26px rgba(201,167,106,.14)}
-
-/* ラテン小見出し：金の細字で格を出す */
-.eyebrow{font-family:"Cormorant Garamond",serif;font-size:12px;font-weight:400;letter-spacing:.52em;text-indent:.52em;
-  color:var(--gold);margin-bottom:18px;opacity:.92}
-
-/* 区切り線：中央に菱形を置く */
-.gline{position:relative;width:88px;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(201,167,106,.75),transparent);margin:28px auto 34px}
-.gline::after{content:"";position:absolute;top:50%;left:50%;width:5px;height:5px;
-  transform:translate(-50%,-50%) rotate(45deg);background:var(--gold-hi);box-shadow:0 0 10px rgba(240,220,174,.6)}
-
-/* 本文：行間を広げ、強調を金に */
-.wrap p{font-size:16.5px;line-height:2.3;letter-spacing:.055em}
-.wrap p + p{margin-top:1.55em}
-.wrap strong{color:var(--gold-hi);font-weight:600}
-
-/* セクションの余白を広げて呼吸させる */
-.sec-a,.sec-b{padding:84px 0}
-.sec-b{background:linear-gradient(180deg,var(--ink2) 0%,var(--ink3) 38%,var(--ink) 100%)}
-
-/* 引用：左の金線＋大きめ明朝 */
-blockquote{font-family:var(--disp);font-size:clamp(17px,4.8vw,20px);line-height:2.15;letter-spacing:.1em;
-  color:#f6f2e6;text-align:center;padding:30px 20px;margin:34px 0;position:relative;
-  background:linear-gradient(180deg,rgba(201,167,106,.07),transparent)}
-blockquote::before,blockquote::after{content:"";position:absolute;left:50%;transform:translateX(-50%);
-  width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-blockquote::before{top:0}
-blockquote::after{bottom:0}
-blockquote em{font-style:normal;color:var(--gold-hi)}
-
-/* 価格：金の箔感を強める */
-.pricecard{border:none;position:relative;padding:48px 24px 40px;
-  background:linear-gradient(180deg,rgba(201,167,106,.11),rgba(201,167,106,.025) 46%,rgba(201,167,106,.06));
-  box-shadow:0 0 80px rgba(201,167,106,.12),inset 0 0 0 1px rgba(201,167,106,.3)}
-.pricecard::before{content:"";position:absolute;inset:5px;border:1px solid rgba(201,167,106,.17);pointer-events:none}
-.pricecard .was{font-size:15px;letter-spacing:.14em;color:var(--moon-dim);text-decoration:line-through;
-  text-decoration-color:rgba(166,63,52,.75);text-decoration-thickness:1.5px;margin-bottom:6px}
-.pricecard .now{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,13vw,58px);font-weight:600;letter-spacing:.03em;
-  line-height:1.2;background:linear-gradient(100deg,#b8955a,#f6e8bf 44%,#d4b071 68%,#b8955a);
-  -webkit-background-clip:text;background-clip:text;color:transparent}
-.pricecard .now small{font-size:16px;letter-spacing:.1em;-webkit-text-fill-color:var(--moon-dim);margin-left:6px}
-.pricecard .meta{font-size:12.5px;letter-spacing:.18em;color:var(--moon-dim);margin-top:10px}
-.pricecard .tag{font-family:var(--disp);font-size:11.5px;letter-spacing:.26em;padding:5px 20px}
-
-/* 特典：金の箔リスト */
-.pricecard .gifts .gh{font-family:var(--disp);font-size:16px;line-height:2;letter-spacing:.08em}
-.pricecard .gifts li{position:relative;padding:11px 12px 11px 34px;text-align:left;letter-spacing:.06em;
-  background:linear-gradient(100deg,rgba(201,167,106,.1),rgba(201,167,106,.03));
-  border:1px solid rgba(201,167,106,.26)}
-.pricecard .gifts li::before{content:"";position:absolute;left:14px;top:50%;width:6px;height:6px;
-  transform:translateY(-50%) rotate(45deg);background:var(--gold-hi);box-shadow:0 0 8px rgba(240,220,174,.55)}
-
-/* カウントダウン：数字を主役に */
-.cd .u b{font-family:"Cormorant Garamond",serif;font-size:clamp(38px,11vw,48px);font-weight:500;color:#f6f2e6}
-.cd .u.last b{background:linear-gradient(100deg,#d4a94e,#f6e8bf);-webkit-background-clip:text;background-clip:text;color:transparent}
-.cd i{color:rgba(201,167,106,.4)}
-.cdlabel{font-family:var(--disp);font-size:12.5px;letter-spacing:.3em;text-indent:.3em}
-
-/* 声：枠を上品に */
-.voices img{border-radius:12px;box-shadow:0 3px 20px rgba(0,0,0,.4);border:1px solid rgba(201,167,106,.1)}
-.vnote{font-size:12px;line-height:1.95;letter-spacing:.05em}
-
-/* 仕様表：線を細く */
-.spec th{font-family:var(--disp);letter-spacing:.14em;color:var(--gold);font-weight:500}
-.spec td{letter-spacing:.05em;line-height:1.95}
-
-/* 下部固定バー：金の箔 */
-.bar a{font-family:var(--disp);font-size:15.5px;font-weight:600;letter-spacing:.14em;padding:16px 10px;border-radius:2px;
-  background:linear-gradient(100deg,#b8955a,#f3e2b4 46%,#b8955a);
-  box-shadow:0 -2px 24px rgba(201,167,106,.22)}
-.bar .s{font-size:10.5px;letter-spacing:.1em}
-
-@media(max-width:380px){
-  body{font-size:15.5px;line-height:2.2}
-  .wrap p{font-size:15.5px}
-  .sec-a,.sec-b{padding:68px 0}
-}
-
-/* 価格カードの商品写真 */
-.pcimg{width:min(62%,210px);margin:4px auto 26px;position:relative}
-.pcimg::after{content:"";position:absolute;inset:-14%;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle,rgba(240,210,140,.22),transparent 68%)}
-.pcimg img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;position:relative;z-index:1;
-  box-shadow:0 10px 40px rgba(0,0,0,.55),0 0 0 1px rgba(201,167,106,.3)}
-.pricecard{padding:44px 24px 38px}
-.pricecard .was{margin-bottom:4px}
-.pricecard .meta{margin-top:8px}
-
-/* 価格カードの余白を詰める */
-.pricecard .was{margin:0 0 6px;line-height:1.4}
-.pricecard .now{margin:0;line-height:1.1}
-.pricecard .meta{margin:10px 0 0;line-height:1.4}
-.pcimg{margin:2px auto 22px}
-
-/* 特典ブロック v2 */
-.pricecard .gifts{margin-top:34px;padding-top:0;border-top:none;position:relative}
-.pricecard .gifts::before{content:"";display:block;width:100%;height:1px;margin-bottom:30px;
-  background:linear-gradient(90deg,transparent,rgba(201,167,106,.5),transparent)}
-.gbadge{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-indent:.2em;
-  color:#1a1408;background:linear-gradient(100deg,#c89b4e,#f6e8bf 48%,#c89b4e);
-  padding:7px 18px;border-radius:2px;margin-bottom:18px;box-shadow:0 4px 18px rgba(201,167,106,.3)}
-.pricecard .gifts .gh{font-family:var(--disp);font-size:clamp(18px,5.2vw,22px);line-height:1.85;
-  letter-spacing:.08em;color:#f6f2e6;margin-bottom:26px}
-.pricecard .gifts .gh strong{color:var(--gold-hi);font-weight:600}
-.gy{font-family:"Cormorant Garamond",serif;font-size:1.5em;font-weight:600;letter-spacing:.02em;
-  background:linear-gradient(100deg,#c89b4e,#f6e8bf 46%,#c89b4e);-webkit-background-clip:text;background-clip:text;color:transparent;
-  padding:0 .08em}
-.glist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;text-align:left}
-.glist li{display:flex;gap:14px;align-items:flex-start;padding:18px 16px;position:relative;
-  background:linear-gradient(110deg,rgba(201,167,106,.12),rgba(201,167,106,.03));
-  border:1px solid rgba(201,167,106,.28)}
-.glist li::after{content:"";position:absolute;top:0;left:0;width:3px;height:100%;
-  background:linear-gradient(180deg,var(--gold-hi),rgba(201,167,106,.2))}
-.gno{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:500;line-height:1;flex:0 0 auto;
-  background:linear-gradient(100deg,#c89b4e,#f6e8bf);-webkit-background-clip:text;background-clip:text;color:transparent;
-  padding-top:3px}
-.gbody{display:flex;flex-direction:column;gap:7px}
-.gbody b{font-family:var(--disp);font-size:16px;font-weight:600;letter-spacing:.06em;color:#f6f2e6;line-height:1.6}
-.gbody i{font-style:normal;font-size:13px;line-height:1.85;letter-spacing:.04em;color:var(--moon-dim)}
-.gfoot{font-size:13px;line-height:1.95;color:var(--moon-dim);margin-top:20px;letter-spacing:.04em}
-@media(max-width:360px){
-  .glist li{padding:15px 13px;gap:11px}
-  .gno{font-size:21px}
-  .gbody b{font-size:15px}
-  .gbody i{font-size:12.5px}
-}
-</style>
+<link rel="stylesheet" href="assets/editorial.css">
 </head>
 <body>
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-img" role="img" aria-label="黄金色に輝くシトリンの球"></div>
+<header class="hero" id="top">
+  <img class="hero-img" src="assets/sphere_portrait_20261018.png" width="941" height="1672" alt="黄金色に輝くシトリンの球" fetchpriority="high">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-veil" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -422,12 +24,13 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <div><span class="hero-limit">数 に 限 り が あ り ま す</span></div>
     <p class="hero-date">10月28日（水）23:59まで</p>
   </div>
-  <div class="scroll-cue" aria-hidden="true"></div>
+  <a class="scroll-cue" href="#welcome" aria-label="ご案内を読む">SCROLL <span>↓</span></a>
 </div>
   <div class="skirt"></div>
-</div>
+</header>
 
-<section class="sec-a">
+<main>
+<section id="welcome" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">TO YOU</p>
     <h2 class="rv gg">動画を最後まで<br>見てくださった<br>あなたへ</h2>
@@ -439,7 +42,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="journey" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">THE JOURNEY</p>
     <h2 class="rv">ここまでの、流れ</h2>
@@ -454,14 +57,14 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="legend" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">THE LEGEND</p>
     <h2 class="rv gg">家のまんなかの、<br>金色の球</h2>
     <div class="gline"></div>
     <p class="rv">7月の動画でお話しした、ブラジルの聖地の集落。あの集落の家には、<strong>家族がいちばん長く過ごす部屋のまんなかに、金色の球</strong>が置かれてきたそうです。</p>
     <blockquote class="rv">入ってくるものは、<br>出かける時に持ち出される。<br><em>留めておくのは、<br>家のまんなかの球だ。</em></blockquote>
-    <div class="ph rv"><img src="assets/sphere_hero_20261018.png" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">黄金色の光を抱いた、シトリンの球</p></div>
+    <div class="ph rv"><img src="assets/sphere_hero_20261018.png" alt="シトリン内部の天然の模様と黄金色の光" loading="lazy" width="1303" height="1207"><p class="cap">黄金色の光を抱いた、シトリンの球</p></div>
     <p class="rv">この石は<strong>シトリン</strong>。黄水晶とも呼ばれる、ブラジルの黄金色の石です。向こうでは<strong>太陽の石</strong>、そして<strong>商人の石</strong>と呼ばれています。昔、お金を扱う家で、その日の売上をしまう場所に置かれてきたからだそうです。</p>
     <p class="rv">持ち歩いたのではありません。<strong>置いた</strong>んです。お金が出入りする、そのすぐ横に。</p>
 
@@ -469,7 +72,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="why" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">WHY</p>
     <h2 class="rv">がんばっても、<br>増えていかなかった理由</h2>
@@ -482,22 +85,22 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="voices" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">VOICE</p>
     <h2 class="rv">数年前に、<br>迎えた方から</h2>
     <div class="gline"></div>
     <p class="rv">あの球を迎えてくださった方から、<br>こんな言葉が届いています。</p>
     <div class="voices rv">
-      <img src="assets/voice1.png" alt="">
-      <img src="assets/voice2.png" alt="">
-      <img src="assets/voice3.png" alt="">
-      <img src="assets/voice4.png" alt="">
-      <img src="assets/voice5.png" alt="">
-      <img src="assets/voice6.png" alt="">
-      <img src="assets/voice7.png" alt="">
-      <img src="assets/voice8.png" alt="">
-      <img src="assets/voice9.png" alt="">
+      <button class="voice-open" type="button" aria-label="お客様の声 1 を拡大"><img src="assets/voice1.png" alt="お客様から届いたメッセージ 1" loading="lazy" width="724" height="446"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 2 を拡大"><img src="assets/voice2.png" alt="お客様から届いたメッセージ 2" loading="lazy" width="736" height="446"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 3 を拡大"><img src="assets/voice3.png" alt="お客様から届いたメッセージ 3" loading="lazy" width="728" height="446"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 4 を拡大"><img src="assets/voice4.png" alt="お客様から届いたメッセージ 4" loading="lazy" width="694" height="404"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 5 を拡大"><img src="assets/voice5.png" alt="お客様から届いたメッセージ 5" loading="lazy" width="712" height="398"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 6 を拡大"><img src="assets/voice6.png" alt="お客様から届いたメッセージ 6" loading="lazy" width="702" height="426"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 7 を拡大"><img src="assets/voice7.png" alt="お客様から届いたメッセージ 7" loading="lazy" width="708" height="432"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 8 を拡大"><img src="assets/voice8.png" alt="お客様から届いたメッセージ 8" loading="lazy" width="720" height="460"><span>拡大して読む ＋</span></button>
+      <button class="voice-open" type="button" aria-label="お客様の声 9 を拡大"><img src="assets/voice9.png" alt="お客様から届いたメッセージ 9" loading="lazy" width="706" height="424"><span>拡大して読む ＋</span></button>
     </div>
     <p class="vnote rv">※数年前に迎えた方からいただいた言葉です<br>※あくまで個人の感想です<br>※効果を保証するものではありません</p>
     <p class="rv" style="text-align:center;color:var(--moon-dim);margin-top:30px">全員に同じことが起きるとは、<br>言いません。</p>
@@ -506,12 +109,12 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="sphere" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">THE SPHERE</p>
     <h2 class="rv gg">黄金の留め球<br>シトリンスフィア</h2>
     <div class="gline"></div>
-    <div class="ph rv"><img src="assets/sphere_hand.jpg" alt="" onerror="this.parentElement.style.display='none'"><p class="cap">手のひらに乗る、あなたの一つ</p></div>
+    <div class="ph rv"><img src="assets/sphere_hero_20261018.png" alt="透明な台座に置いたシトリンの球" loading="lazy" width="1303" height="1207"><p class="cap">手のひらに乗る、あなたの一つ</p></div>
     <table class="spec rv">
       <tr><th>素材</th><td>天然シトリン・黄水晶（ブラジル産）</td></tr>
       <tr><th>大きさ</th><td>直径 約5cm ／ 約170g<br>手のひらに乗る大きさです</td></tr>
@@ -523,7 +126,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="place" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">HOW TO PLACE</p>
     <h2 class="rv">迎え方は、ひとつだけ</h2>
@@ -531,12 +134,13 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <p class="rv" style="text-align:center;font-size:18px"><strong>毎日いちばん長く過ごす場所に、<br>置いてください。</strong></p>
     <p class="rv">多くの方はリビング。一人暮らしなら、いちばん長くいる部屋。リビングが自分の場所でなければ、台所のテーブルや、自分の机でも構いません。</p>
     <p class="rv" style="text-align:center"><em>届いた朝、カーテンを開けて、<br>まず光を通してみてください。</em></p>
+<figure class="living-photo"><img src="assets/sphere_living_20261018.png" width="1536" height="1024" loading="lazy" alt="木のテーブルにシトリンを置いた暮らしのイメージ"><figcaption>暮らしの中での設置イメージ（生成画像）</figcaption></figure>
 
   </div>
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="july" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">FOR JULY</p>
     <h2 class="rv">7月に、ブラジルルチルを<br>迎えてくださった方へ</h2>
@@ -546,7 +150,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="price" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">PRICE</p>
     <h2 class="rv">お値段について、<br>正直にお話しします</h2>
@@ -554,7 +158,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
     <p class="rv">あの老人が「日本で困っている人のためなら」と、ごくわずかだけ託してくれた球です。一つずつ、置く場所に合わせて選んでお届けします。</p>
     <div class="pricecard rv"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
       <p class="tag">黄金の留め球 シトリンスフィア</p>
-      <div class="pcimg"><img src="assets/sphere_hero_20261018.png" alt="黄金の留め球 シトリンスフィア"></div>
+      <div class="pcimg"><img src="assets/sphere_hero_20261018.png" alt="黄金の留め球 シトリンスフィア" width="1303" height="1207"></div>
       <p class="was">本来 ¥149,000</p>
       <p class="now gg">¥99,800<small>（税込）</small></p>
       <p class="meta">送料込み</p>
@@ -613,7 +217,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="for-you" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">FOR YOU</p>
     <h2 class="rv">こんな方に、<br>迎えていただきたい</h2>
@@ -629,7 +233,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="receive" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">HOW TO RECEIVE</p>
     <h2 class="rv">お迎えの流れ</h2>
@@ -646,7 +250,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b">
+<section id="after" class="sec-b">
   <div class="wrap">
     <p class="eyebrow lat rv">AFTER ORDER</p>
     <h2 class="rv">ご注文のあとに</h2>
@@ -659,7 +263,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 
   </div>
 </section>
-<section class="sec-a">
+<section id="faq" class="sec-a">
   <div class="wrap">
     <p class="eyebrow lat rv">Q &amp; A</p>
     <h2 class="rv">よくあるご質問</h2>
@@ -684,7 +288,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
 </section>
 <div class="band"></div>
 
-<section class="sec-b last">
+<section id="closing" class="sec-b last">
   <div class="wrap">
     <p class="eyebrow lat rv">FROM TO-</p>
     <h2 class="rv gg">最後に</h2>
@@ -701,6 +305,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <p style="font-size:13px;color:var(--moon-dim);margin-bottom:14px">引き寄せ科学者 とー</p>
@@ -715,6 +320,7 @@ blockquote em{font-style:normal;color:var(--gold-hi)}
   <a class="js-cta" href="#">¥99,800で迎える<span class="s">（税込・送料込み）</span></a>
 </div>
 
+<dialog id="voice-dialog" aria-label="お客様の声を拡大表示"><div class="dialog-toolbar"><span>左右に動かして読めます</span><button type="button" class="dialog-close" aria-label="閉じる">閉じる ×</button></div><div class="voice-scroll" tabindex="0" aria-label="拡大したメッセージ。左右にスクロールできます"><img alt="拡大したお客様のメッセージ"></div></dialog>
 <script>
 // STORESの商品URLを入れる
 const STORE_URL = "https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ac9c3635633c5f59ec26d10";
@@ -737,8 +343,19 @@ function setCta(){
   });
 }
 setCta(); setInterval(setCta, 30000);
+/* Reveal animations are intentionally disabled for immediate readability. */
 const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.rv,.tl').forEach(el=>io.observe(el));
+
+const voiceDialog = document.getElementById('voice-dialog');
+document.querySelectorAll('.voice-open').forEach(button => button.addEventListener('click', () => {
+  const source = button.querySelector('img');
+  voiceDialog.querySelector('img').src = source.src;
+  voiceDialog.querySelector('img').alt = source.alt;
+  voiceDialog.showModal();
+}));
+voiceDialog.querySelector('.dialog-close').addEventListener('click', () => voiceDialog.close());
+voiceDialog.addEventListener('click', event => { if(event.target === voiceDialog) voiceDialog.close(); });
 </script>
 </body>
 </html>
