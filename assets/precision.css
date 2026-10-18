@@ -73,3 +73,26 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #8c
 @media(prefers-reduced-motion:reduce){#faq details{transition:none}}
 
 @media(min-width:701px){.calendar-year{font-size:22px;margin-bottom:5px}.gifts .calendar-image{height:135px}}
+
+/* Two gentle, opposite-moving rows; original messages remain available as a list. */
+.voice-controls{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin:24px 0 16px}
+.voice-controls button{font:12px/1.5 var(--body);letter-spacing:.03em;color:#002946;background:transparent;border:1px solid #aab8c5;border-radius:24px;min-height:44px;padding:10px 16px;cursor:pointer}
+.voice-controls [hidden],.voice-controls[hidden]{display:none}
+.voices.voice-motion{display:block;margin-top:0;overflow:hidden}
+.voice-lane{overflow:hidden;padding:4px 0;margin:0 0 14px}
+.voice-track{display:flex;width:max-content;animation:voice-drift var(--duration) linear infinite}
+.voice-lane:nth-child(2) .voice-track{animation-direction:reverse}
+.voice-group{display:flex;gap:16px;padding-right:16px;flex-shrink:0}
+.voice-motion .voice-open{flex:0 0 290px;width:290px;min-width:0;height:218px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;border-color:#d9dce3;box-shadow:0 3px 14px #00294606}
+.voice-motion .voice-open img{display:block;width:100%;height:166px;object-fit:contain;min-height:0}
+.voice-motion .voice-open span{margin:0;display:block;font-size:11px}
+.voice-paused .voice-track{animation-play-state:paused}
+@media(hover:hover){.voice-motion:hover .voice-track{animation-play-state:paused}}
+@keyframes voice-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.voices.voice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;overflow:visible}
+.voice-list .voice-lane,.voice-list .voice-track,.voice-list .voice-group{display:contents;animation:none}
+.voice-list .voice-group[aria-hidden]{display:none}
+.voice-list .voice-open{width:100%;height:auto}
+.voice-list .voice-open img{height:auto}
+@media(max-width:700px){.voices.voice-list{grid-template-columns:1fr}.voice-controls{justify-content:flex-start}.voice-motion .voice-open{flex-basis:270px;width:270px;height:205px}.voice-motion .voice-open img{height:153px}.voice-list .voice-open{width:100%;height:auto}.voice-list .voice-open img{height:auto}}
+@media(prefers-reduced-motion:reduce){.voice-track{animation:none!important}}
