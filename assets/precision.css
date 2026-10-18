@@ -71,3 +71,5 @@ strong,em,.gg{color:inherit}strong{font-weight:700}p{margin-bottom:1.25em}h1,h2,
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #8c6a30;outline-offset:4px}.voice-open:hover{border-color:#8c9dad}.voice-open:focus-visible{outline-offset:3px}
 @media(max-width:700px){.order-reminder{font-size:13px;margin-top:24px;padding:16px 0}.order-reminder b{font-size:12px}#faq summary{font-size:16px;letter-spacing:.025em}#faq summary:before{top:22px}#faq summary:after{top:23px}#legend .ph img{aspect-ratio:1303/1207}#closing .wrap>p{text-wrap:pretty}.hero-sub{text-wrap:balance}}
 @media(prefers-reduced-motion:reduce){#faq details{transition:none}}
+
+@media(min-width:701px){.calendar-year{font-size:22px;margin-bottom:5px}.gifts .calendar-image{height:135px}}
