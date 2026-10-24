@@ -96,3 +96,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #8c
 .voice-list .voice-open img{height:auto}
 @media(max-width:700px){.voices.voice-list{grid-template-columns:1fr}.voice-controls{justify-content:flex-start}.voice-motion .voice-open{flex-basis:270px;width:270px;height:205px}.voice-motion .voice-open img{height:153px}.voice-list .voice-open{width:100%;height:auto}.voice-list .voice-open img{height:auto}}
 @media(prefers-reduced-motion:reduce){.voice-track{animation:none!important}}
+
+/* Keep the daily comparison and its explanation together below the total price. */
+.price-perspective{grid-column:1/-1;width:100%;max-width:520px;margin:26px auto 0;padding-top:22px;border-top:1px solid #d3d9e1;text-align:left}
+.price-perspective p{font-size:16px;line-height:1.85;letter-spacing:.025em;margin:0 0 18px}
+.price-perspective strong{font-weight:700}
+.price-perspective .price-perspective-note{font-size:13px;line-height:1.7;color:#505050;margin:-6px 0 20px}
+.price-perspective p:last-child{margin-bottom:0}
+@media(max-width:700px){.price-perspective{margin-top:24px;padding-top:20px}.price-perspective p{font-size:16px}.price-perspective .price-perspective-note{font-size:13px}}
